@@ -1,0 +1,90 @@
+{
+  "eqm": {
+    "description":"",
+    "tables": {
+      "city_segments": {
+        "comment": "",
+        "fields": {
+          "segment": "",
+          "city_name": "",
+          "intrr_srv": "",
+          "parent_segment": ""
+        }
+      },
+      "ds_templates": {
+        "comment": "",
+        "fields": {
+          "ds_template_id": "",
+          "interface_type_id": "",
+          "device_type_id": "",
+          "rule_name": "",
+          "ds_type": "",
+          "cmd_template": "",
+          "protocol": "",
+          "min_value": "",
+          "max_value": "",
+          "enable": "",
+          "ds_style_id": "",
+          "remark": "",
+          "guid": "",
+          "regexp_answer_mask": "",
+          "rpn": "",
+          "code": "",
+          "for_devices": "",
+          "for_ports": "",
+          "category": ""
+        }
+      },
+      "ri_datasources": {
+        "comment": "",
+        "fields": {
+          "ri_datasources_id": "",
+          "ds_template_id": "",
+          "device_id": "",
+          "device_port_id": "",
+          "heartbeat": "",
+          "max_value": "",
+          "min_value": "",
+          "ds_style_id": "",
+          "rrd_id": "",
+          "rule_name": "",
+          "ds_type": "",
+          "cmd_template": "",
+          "protocol": "",
+          "state": "",
+          "begin_date": "",
+          "end_date": "",
+          "ds_name": "",
+          "upper_limit": "",
+          "upper_escalation": "",
+          "lower_limit": "",
+          "lower_escalation": "",
+          "regexp_answer_mask": "",
+          "is_virtual": "",
+          "syncdate": "",
+          "syncmsg": "",
+          "rpn": "",
+          "series_size": ""
+        }
+      },
+      "rrd_items": {
+        "comment": "",
+        "fields": {
+          "rrd_id": "",
+          "db_name": "",
+          "db_type": "",
+          "start_time": "",
+          "step": "",
+          "state": "",
+          "begin_date": "",
+          "end_date": "",
+          "rrd_template_id": "",
+          "device_id": "",
+          "caption": "",
+          "syncdate": "",
+          "syncmsg": ""
+        }
+      }
+    }
+  }
+}

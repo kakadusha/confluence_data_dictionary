@@ -1,0 +1,275 @@
+{
+  "gis": {
+    "description":"",
+    "tables": {
+      "gis_organization_work_time_all": {
+        "comment": "Рабочее время организаций",
+        "fields": {
+          "gis_organization_work_time_id": "Id записи",
+          "gis_organization_id": "Id Организации",
+          "number_day": "Номер дня недели",
+          "time_from": "Начало рабочего времени",
+          "time_to": "Окончание рабочего времени",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "billing_id": "Id Биллинга",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_adm_district_all": {
+        "comment": "Справочник Административных районов",
+        "fields": {
+          "gis_district_id": "Id Района",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_region_id": "Id Региона",
+          "type_id": "Id Типа района",
+          "district_name": "Название Района",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_district_types_all": {
+        "comment": "Справочник типов районов",
+        "fields": {
+          "type_id": "Id Типа района",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "type_name": "Название типа района",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_house_address_all": {
+        "comment": "Справочник улиц",
+        "fields": {
+          "gis_address_id": "Id адреса",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_house_id": "Id дома",
+          "gis_street_id": "Id улицы",
+          "house_number": "Номер дома",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_id": "Дата заливки на SA"
+        }
+      },
+      "gis_house_attrs_all": {
+        "comment": "Атрибуты домов",
+        "fields": {
+          "attr_id": "Id Атрибута",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_house_id": "Id Дома",
+          "attr_type_id": "Id Типа атрибута",
+          "attr_value": "Значение атрибута дома",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_houses_all": {
+        "comment": "Справочник домов",
+        "fields": {
+          "gis_house_id": "Id Дома",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "purpose_id": "Id Типа здания",
+          "building_name": "Адрес здания/Тип здания (киоск, гараж и т.п.)",
+          "postcode": "Индекс",
+          "unified_house_id": "Единый id дома",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "region_id": "Id Региона",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_purposes_all": {
+        "comment": "Справочник Типов зданий",
+        "fields": {
+          "purpose_id": "Id Тип здания",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "purpose_name": "Наименование Типа здания",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_regions_all": {
+        "comment": "Справочник регионов",
+        "fields": {
+          "gis_region_id": "Id Региона",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "region_name": "Название региона",
+          "sa_import_date": "Дата заливки на SA",
+          "link_on_area_id": "Id связки"
+        }
+      },
+      "gis_organizations_all": {
+        "comment": "Справочник организаций",
+        "fields": {
+          "gis_organization_id": "Id организации",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают ",
+          "organization_name": "Имя организации",
+          "addres_comment": "Комментарий к адресу",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "region_id": "Id Региона",
+          "sa_import_id": "Дата заливки на SA"
+        }
+      },
+      "gis_attr_types_all": {
+        "comment": "Справочник атрибутов",
+        "fields": {
+          "attr_type_id": "Id Типа атрибута",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "attr_type_name": "Наименование Типа атрибута",
+          "gis_tag": "Наименование атрибута GIS (суть как у attr_type_name)",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_organization_attrs_all": {
+        "comment": "Атрибуты организаций",
+        "fields": {
+          "attr_id": "Id Атрибута",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_organization_id": "Id Организации",
+          "attr_type_id": "Id Типа атрибута",
+          "attr_value": "Значение",
+          "active_from": "Дата активен с",
+          "active_to": "Дата активен по",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_contact_types_all": {
+        "comment": "Контактные данные организаций",
+        "fields": {
+          "gis_contact_type_id": "Id Типа контактов",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "contact_type_name": "Тип контакта",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_organization_contacts_all": {
+        "comment": "Контактные данные организаций",
+        "fields": {
+          "gis_organization_contact_id": "Id записи контакта",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_organization_id": "Id организации",
+          "gis_contact_type_id": "Id Типа контакта",
+          "contact_data": "Контакт – информация",
+          "text_comment": "Текст (чаще всего повторяет поле contact_data)",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_house_link_org_all": {
+        "comment": "Связка организации и домов",
+        "fields": {
+          "attr_id": "Id Атрибута",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_organization_id": "Id Организации",
+          "attr_type_id": "Id Типа атрибута",
+          "attr_value": "Значение",
+          "active_from": "Дата активен с",
+          "active_to": "Дата активен по",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_rubrics_all": {
+        "comment": "Справочник Отраслей",
+        "fields": {
+          "attr_id": "Id Атрибута",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_organization_id": "Id Организации",
+          "attr_type_id": "Id Типа атрибута",
+          "attr_value": "Значение",
+          "active_from": "Дата активен с",
+          "active_to": "Дата активен по",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_org_lnk_rubric_all": {
+        "comment": "Связка организаций и рубрик",
+        "fields": {
+          "link_id": "Id связки",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_organization_id": "Id Организации",
+          "gis_rubric_id": "Id Отрасли",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_organizations_work_time_all": {
+        "comment": "Рабочее время организаций",
+        "fields": {
+          "link_id": "Id связки",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_organization_id": "Id Организации",
+          "gis_rubric_id": "Id Отрасли",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_providers_all": {
+        "comment": "Справочник провайдеров",
+        "fields": {
+          "gis_provider_id": "Id Провайдера",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_region_id": "Id Региона",
+          "provider_name": "Название провайдера",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_houses_link_providers_all": {
+        "comment": "Связка домов и провайдеров",
+        "fields": {
+          "link_id": "Связки",
+          "billing_id": "Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_provider_id": "Провайдера",
+          "gis_house_id": "Дома",
+          "active_from": "активно с",
+          "active_to": "активно по",
+          "area_id": "Населенного пункта – воспринимать как Биллинг",
+          "sa_import_date": "заливки на SA"
+        }
+      },
+      "gis_streets_all": {
+        "comment": "Справочник улиц",
+        "fields": {
+          "gis_street_id": "Id улицы",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_district_id": "Id Района",
+          "street_name": "Название улицы",
+          "unified_street_id": "Единый id улицы",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "region_id": "Id Региона",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_provider_attr_types_all": {
+        "comment": "Справочник атрибутов для провайдеров",
+        "fields": {
+          "gis_street_id": "Id улицы",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_district_id": "Id Района",
+          "street_name": "Название улицы",
+          "unified_street_id": "Единый id улицы",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "region_id": "Id Региона",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_provider_attrs_all": {
+        "comment": "Атрибуты провайдеров",
+        "fields": {
+          "gis_street_id": "Id улицы",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "gis_district_id": "Id Района",
+          "street_name": "Название улицы",
+          "unified_street_id": "Единый id улицы",
+          "area_id": "Id Населенного пункта – воспринимать как Биллинг",
+          "region_id": "Id Региона",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      },
+      "gis_org_attr_types_all": {
+        "comment": "Справочник атрибутов для провайдеров",
+        "fields": {
+          "attr_type_id": "Id Типа атрибута",
+          "billing_id": "Id Биллинга = 0 – Холдинг, инфу заливают",
+          "attr_type_name": "Наименование Типа атрибута",
+          "sa_import_date": "Дата заливки на SA"
+        }
+      }
+    }
+  }
+}

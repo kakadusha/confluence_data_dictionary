@@ -1,0 +1,58 @@
+{
+  "interact": {
+    "description":"",
+    "tables": {
+      "amedia_premium_hd": {
+        "comment": "Промежуточная таблица для триггера AMEDIA_PREMIUM_HD",
+        "fields": {
+          "client_id": "ID клиента",
+          "billing_id": "Код города",
+          "agreement_number": "Номер договора",
+          "amedia_premium_hd": "1 - триггер отправляется, 0 - триггер не отправляется"
+        }
+      },
+      "sawrout": {
+        "comment": "Промежуточная таблица для триггера SAWROUT",
+        "fields": {
+          "client_id": "ID клиента",
+          "billing_id": "Код города",
+          "agreement_number": "Номер договора",
+          "sawrout": "1 - триггер отправляется, 0 - триггер не отправляется"
+        }
+      },
+      "sawtarif": {
+        "comment": "Промежуточная таблица для триггера SAWTARIF",
+        "fields": {
+          "client_id": "ID клиента",
+          "billing_id": "Код города",
+          "agreement_number": "Номер договора",
+          "sawtarif": "1 - триггер отправляется, 0 - триггер не отправляется"
+        }
+      },
+      "speed": {
+        "comment": "Промежуточная таблица для триггера SPEED",
+        "fields": {
+          "client_id": "ID клиента",
+          "billing_id": "Код города",
+          "agreement_number": "Номер договора",
+          "speed": "1 - триггер отправляется, 0 - триггер не отправляется"
+        }
+      },
+      "triggers_mart": {
+        "comment": "",
+        "fields": {
+          "agreement_number": "Номер договора",
+          "agreement_id": "ID договора",
+          "client_id": "ID клиента",
+          "billing_id": "Код города",
+          "news": "1 - триггер NEWS отправляется, 0 - триггер не отправляется",
+          "autopay": "1 - триггер AUTOPAY отправляется, 0 - триггер не отправляется",
+          "amedia_premium_hd": "1 - триггер AMEDIA_PREMIUM_HD отправляется, 0 - триггер не отправляется",
+          "sawrout": "1 - триггер SAWROUT отправляется, 0 - триггер не отправляется",
+          "sawtarif": "1 - триггер SAWTARIF отправляется, 0 - триггер не отправляется",
+          "speed": "1 - триггер SPEED отправляется, 0 - триггер не отправляется"
+        }
+      }
+    }
+  }
+}

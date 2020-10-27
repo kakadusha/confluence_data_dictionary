@@ -1,0 +1,352 @@
+{
+  "ga": {
+    "description":"",
+    "tables": {
+      "android_event_tracking": {
+        "comment": "МП Мой Домру(android). События  ",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "event_category": "Категория события",
+          "event_action": "Действие"
+        }
+      },
+      "android_geo_network": {
+        "comment": "МП Мой Домру(android). Геоположение пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "continent": "Континент пользователя, полученный из IP-адресов или географических идентификаторов",
+          "subcontinent": "Субконтинет пользователя, полученный из IP-адресов или географических идентификаторов. К примеру, Eastern Europe",
+          "country": "Страна пользовтеля",
+          "region": "Регион пользователя. К примеру, Moscow",
+          "metro": "Станция метро",
+          "city": "Город пользователя"
+        }
+      },
+      "android_goal_conventions": {
+        "comment": "МП Мой Домру(android).Целевые действия",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "goal_completion_location": "Путь к странице или наименовние экрана, где пользователь достиг цели",
+          "goal_previous_step_1": "Путь к странице или наименование экрана, где находился пользователь за один шаг до достижения цели",
+          "goal_previous_step_2": "Путь к странице или наименование экрана, где находился пользователь за два шага до достижения цели"
+        }
+      },
+      "android_page_tracking": {
+        "comment": "МП Мой Домру(android). Посещение страниц",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "hostname": "Имя хоста, с которого был сделан запрос отслеживания",
+          "page_path": "Путь страницы сайта с query параметрами. Имя хоста + путь страницы = URL страницы",
+          "page_poath_level1": "Путь страницы 1 уровня",
+          "landing_page_path": "Пусть к лендингу",
+          "second_page_path": "Путь к следующей странице",
+          "previous_page_path": "Путь к предыдущей странице"
+        }
+      },
+      "android_plattform_or_device": {
+        "comment": "МП Мой Домру(android). Устройство пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "browser": "Браузер",
+          "browser_version": "Версия браузера",
+          "operating_system": "Операционная система",
+          "operating_system_version": "Версия операционной системы",
+          "mobile_device_branding": "Бренд мобильного устройства",
+          "mobile_device_model": "Модель мобильного устройства"
+        }
+      },
+      "android_system": {
+        "comment": "МП Мой Домру(android). Система устройства",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "flash_version": "Версия flash",
+          "java_enabled": "Включена ли java(Yes или No)",
+          "language": "Язык в формате ISO-639",
+          "screen_colors": "Глубина цвета дисплея пользователя. К примеру: 4-bit, 8-bit, 24-bit, или undefined-bit"
+        }
+      },
+      "ios_event_tracking": {
+        "comment": "МП Мой Домру(ios). События",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "event_category": "Категория события",
+          "event_action": "Действие"
+        }
+      },
+      "ios_geo_network": {
+        "comment": "МП Мой Домру(ios). Геоположение пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "continent": "Континент пользователя, полученный из IP-адресов или географических идентификаторов",
+          "subcontinent": "Субконтинет пользователя, полученный из IP-адресов или географических идентификаторов. К примеру, Eastern Europe",
+          "country": "Страна пользовтеля",
+          "region": "Регион пользователя. К примеру, Moscow",
+          "metro": "Станция метро",
+          "city": "Город пользователя"
+        }
+      },
+      "ios_goal_conventions": {
+        "comment": "МП Мой Домру(ios). Целевые действия",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "goal_completion_location": "Путь к странице или наименовние экрана, где пользователь достиг цели",
+          "goal_previous_step_1": "Путь к странице или наименование экрана, где находился пользователь за один шаг до достижения цели",
+          "goal_previous_step_2": "Путь к странице или наименование экрана, где находился пользователь за два шага до достижения цели"
+        }
+      },
+      "ios_page_tracking": {
+        "comment": "МП Мой Домру(ios). Посещение страниц",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "hostname": "Имя хоста, с которого был сделан запрос отслеживания",
+          "page_path": "Путь страницы сайта с query параметрами. Имя хоста + путь страницы = URL страницы",
+          "page_poath_level1": "Путь страницы 1 уровня",
+          "landing_page_path": "Пусть к лендингу",
+          "second_page_path": "Путь к следующей странице",
+          "previous_page_path": "Путь к предыдущей странице"
+        }
+      },
+      "ios_plattform_or_device": {
+        "comment": "МП Мой Домру(ios). Устройство пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "browser": "Браузер",
+          "browser_version": "Версия браузера",
+          "operating_system": "Операционная система",
+          "operating_system_version": "Версия операционной системы",
+          "mobile_device_branding": "Бренд мобильного устройства",
+          "mobile_device_model": "Модель мобильного устройства"
+        }
+      },
+      "ios_system": {
+        "comment": "МП Мой Домру(ios). Система устройства",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "flash_version": "Версия flash",
+          "java_enabled": "Включена ли java(Yes или No)",
+          "language": "Язык в формате ISO-639",
+          "screen_colors": "Глубина цвета дисплея пользователя. К примеру: 4-bit, 8-bit, 24-bit, или undefined-bit"
+        }
+      },
+      "movixru_event_tracking": {
+        "comment": "МП Мувикс. События",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "event_category": "Категория события",
+          "event_action": "Действие"
+        }
+      },
+      "movixru_geo_network": {
+        "comment": "МП Мувикс. Геоположение пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "continent": "Континент пользователя, полученный из IP-адресов или географических идентификаторов",
+          "subcontinent": "Субконтинет пользователя, полученный из IP-адресов или географических идентификаторов. К примеру, Eastern Europe",
+          "country": "Страна пользовтеля",
+          "region": "Регион пользователя. К примеру, Moscow",
+          "metro": "Станция метро",
+          "city": "Город пользователя"
+        }
+      },
+      "movixru_goal_conventions": {
+        "comment": "МП Мувикс. Целевые действия",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "goal_completion_location": "Путь к странице или наименовние экрана, где пользователь достиг цели",
+          "goal_previous_step_1": "Путь к странице или наименование экрана, где находился пользователь за один шаг до достижения цели",
+          "goal_previous_step_2": "Путь к странице или наименование экрана, где находился пользователь за два шага до достижения цели"
+        }
+      },
+      "movixru_page_tracking": {
+        "comment": "МП Мувикс. Посещение страниц",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "hostname": "Имя хоста, с которого был сделан запрос отслеживания",
+          "page_path": "Путь страницы сайта с query параметрами. Имя хоста + путь страницы = URL страницы",
+          "page_poath_level1": "Путь страницы 1 уровня",
+          "landing_page_path": "Пусть к лендингу",
+          "second_page_path": "Путь к следующей странице",
+          "previous_page_path": "Путь к предыдущей странице"
+        }
+      },
+      "movixru_plattform_or_device": {
+        "comment": "МП Мувикс. Устройство пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "browser": "Браузер",
+          "browser_version": "Версия браузера",
+          "operating_system": "Операционная система",
+          "operating_system_version": "Версия операционной системы",
+          "mobile_device_branding": "Бренд мобильного устройства",
+          "mobile_device_model": "Модель мобильного устройства"
+        }
+      },
+      "movixru_system": {
+        "comment": "МП Мувикс. Система устройства",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "flash_version": "Версия flash",
+          "java_enabled": "Включена ли java(Yes или No)",
+          "language": "Язык в формате ISO-639",
+          "screen_colors": "Глубина цвета дисплея пользователя. К примеру: 4-bit, 8-bit, 24-bit, или undefined-bit"
+        }
+      },
+      "wifi_android_event_tracking": {
+        "comment": "МП Домру Wifi (android). События",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "event_category": "Категория события",
+          "event_action": "Действие"
+        }
+      },
+      "wifi_android_geo_network": {
+        "comment": "МП Домру Wifi (android). Геоположение пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "continent": "Континент пользователя, полученный из IP-адресов или географических идентификаторов",
+          "subcontinent": "Субконтинет пользователя, полученный из IP-адресов или географических идентификаторов. К примеру, Eastern Europe",
+          "country": "Страна пользовтеля",
+          "region": "Регион пользователя. К примеру, Moscow",
+          "metro": "Станция метро",
+          "city": "Город пользователя"
+        }
+      },
+      "wifi_android_goal_conventions": {
+        "comment": "МП Домру Wifi (android). Целевые действия",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "goal_completion_location": "Путь к странице или наименовние экрана, где пользователь достиг цели",
+          "goal_previous_step_1": "Путь к странице или наименование экрана, где находился пользователь за один шаг до достижения цели",
+          "goal_previous_step_2": "Путь к странице или наименование экрана, где находился пользователь за два шага до достижения цели"
+        }
+      },
+      "wifi_android_page_tracking": {
+        "comment": "МП Домру Wifi (android). Посещение страниц",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "hostname": "Имя хоста, с которого был сделан запрос отслеживания",
+          "page_path": "Путь страницы сайта с query параметрами. Имя хоста + путь страницы = URL страницы",
+          "page_poath_level1": "Путь страницы 1 уровня",
+          "landing_page_path": "Пусть к лендингу",
+          "second_page_path": "Путь к следующей странице",
+          "previous_page_path": "Путь к предыдущей странице"
+        }
+      },
+      "wifi_android_plattform_or_device": {
+        "comment": "МП Домру Wifi (android). Устройство пользования",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "browser": "Браузер",
+          "browser_version": "Версия браузера",
+          "operating_system": "Операционная система",
+          "operating_system_version": "Версия операционной системы",
+          "mobile_device_branding": "Бренд мобильного устройства",
+          "mobile_device_model": "Модель мобильного устройства"
+        }
+      },
+      "wifi_android_system": {
+        "comment": "МП Домру Wifi (android). Система устройства",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "flash_version": "Версия flash",
+          "java_enabled": "Включена ли java(Yes или No)",
+          "language": "Язык в формате ISO-639",
+          "screen_colors": "Глубина цвета дисплея пользователя. К примеру: 4-bit, 8-bit, 24-bit, или undefined-bit"
+        }
+      },
+      "wifi_ios_event_tracking": {
+        "comment": "МП Домру Wifi (ios). События",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "event_category": "Категория события",
+          "event_action": "Действие"
+        }
+      },
+      "wifi_ios_geo_network": {
+        "comment": "МП Домру Wifi (ios). Геоположение пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "continent": "Континент пользователя, полученный из IP-адресов или географических идентификаторов",
+          "subcontinent": "Субконтинет пользователя, полученный из IP-адресов или географических идентификаторов. К примеру, Eastern Europe",
+          "country": "Страна пользовтеля",
+          "region": "Регион пользователя. К примеру, Moscow",
+          "metro": "Станция метро",
+          "city": "Город пользователя"
+        }
+      },
+      "wifi_ios_goal_conventions": {
+        "comment": "МП Домру Wifi (ios). Целевые действия",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "goal_completion_location": "Путь к странице или наименовние экрана, где пользователь достиг цели",
+          "goal_previous_step_1": "Путь к странице или наименование экрана, где находился пользователь за один шаг до достижения цели",
+          "goal_previous_step_2": "Путь к странице или наименование экрана, где находился пользователь за два шага до достижения цели"
+        }
+      },
+      "wifi_ios_page_tracking": {
+        "comment": "МП Домру Wifi (ios). Посещение страниц",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "hostname": "Имя хоста, с которого был сделан запрос отслеживания",
+          "page_path": "Путь страницы сайта с query параметрами. Имя хоста + путь страницы = URL страницы",
+        "page_poath_level1": "Путь страницы 1 уровня",
+          "landing_page_path": "Пусть к лендингу",
+          "second_page_path": "Путь к следующей странице",
+          "previous_page_path": "Путь к предыдущей странице"
+        }
+      },
+      "wifi_ios_plattform_or_device": {
+        "comment": "МП Домру Wifi (ios). Устройство пользователя",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "browser": "Браузер",
+          "browser_version": "Версия браузера",
+          "operating_system": "Операционная система",
+          "operating_system_version": "Версия операционной системы",
+          "mobile_device_branding": "Бренд мобильного устройства",
+          "mobile_device_model": "Модель мобильного устройства"
+        }
+      },
+      "wifi_ios_system": {
+        "comment": "МП Домру Wifi (ios). Система устройства",
+        "fields": {
+          "date_hour_minute": "Время значения в отчёте в формате YYYYMMDDHHMM",
+          "dimension2": "Номер договора",
+          "flash_version": "Версия flash",
+          "java_enabled": "Включена ли java(Yes или No)",
+          "language": "Язык в формате ISO-639",
+          "screen_colors": "Глубина цвета дисплея пользователя. К примеру: 4-bit, 8-bit, 24-bit, или undefined-bit"
+        }
+      }
+    }
+  }
+}

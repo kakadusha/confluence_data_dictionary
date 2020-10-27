@@ -1,0 +1,14 @@
+{
+  "netflow": {
+    "https": {
+      "comment": "",
+      "fields": {
+        "bid": "",
+        "ts": "",
+        "wip": "",
+        "cid": "",
+        "sni": ""
+      }
+    }
+  }
+}

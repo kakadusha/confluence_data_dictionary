@@ -1,0 +1,348 @@
+{
+  "recommendations_movix": {
+    "description": "",
+    "tables": {
+      "ab_subscriber": {
+        "comment": "не актуально ",
+        "fields": {
+          "subscriber_id": "",
+          "group_id": ""
+        }
+      },
+      "ab_subscriber_groups": {
+        "comment": "не актуально",
+        "fields": {
+          "id": "",
+          "name": ""
+        }
+      },
+      "api_rec_internal_fails": {
+        "comment": "не актуально",
+        "fields": {
+          "id": "",
+          "description": "",
+          "start_date": "",
+          "end_date": ""
+        }
+      },
+      "client_events": {
+        "comment": "client events for creating recomendation (Таблица событий)",
+        "fields": {
+          "timestam": "STRING of event (create at the moment consume from kafka)",
+          "subscriberid": "Subscriber Id",
+          "log_id": "Unique identifier of event",
+          "itemtype": "Type of item",
+          "platformid": "Platform Id",
+          "deviceid": "Device Id",
+          "eventtype": "Type of event",
+          "ts": "STRING of event on user device",
+          "assetid": "Asset Id",
+          "usecaseid": "Usecase Id",
+          "extidcity": "City Id",
+          "scheduleprogramid": "идентификатор программы для передачи из сетки (одна программа может идти в разное время в сетке)",
+          "assetposition": "Position in the asset",
+          "recommendationid": "Recommendation Id (type, example \"\"vod-movies-for-you\"\")",
+          "changetype": "для события изменения громкости",
+          "iscatchup": "Catchup",
+          "iscatchupstartover": "устарело, не используется",
+          "channelsid": "устарело, не используется",
+          "position": "позиция в плеере в миллисекундах, на которой нажали паузу",
+          "lcn": "lcn номер канала",
+          "started": "дата начала просматриваемого фрагмента",
+          "finish": "дата конца просматриваемого фрагмента",
+          "transactionid": "Transaction Id",
+          "progressvalue": "процент просмотренной задачи",
+          "segmentid": "",
+          "groupid": "",
+          "year": "",
+          "month": ""
+        }
+      },
+      "datamart": {
+        "comment": "Таблица метаданных (знания о контенте)  ",
+        "fields": {
+          "id": "synthetic key",
+          "nativeitemid": "key of channel task",
+          "channelid": "key of channel task",
+          "scheduleid": "?",
+          "movieid": "Ключ таска для MOVIE",
+          "serialid": "Ключ таска для SERIAL",
+          "seasonid": "Ключ таска для SEASON",
+          "episodeid": "Ключ таска для EPISODE",
+          "channelpackageid": "Ключ таска для CHANNEL_PACKAGE",
+          "channelpackagerootid": "Ключ таска для CHANNEL_PACKAGE_ROOT",
+          "subscriptionid": "Ключ таска для SUBSCRIPTION",
+          "packageid": "Ключ таска для PACKAGE",
+          "genreid": "?",
+          "offerid": "?",
+          "providerid": "?",
+          "giftid": "?",
+          "programid": "?",
+          "promotionid": "?",
+          "personid": "?",
+          "notificationid": "?",
+          "categoryid": "?",
+          "serviceid": "?",
+          "duration": "duration in sec",
+          "numberoscarawards": "number of oscar awards",
+          "numberemmyawards": "number of emmy awards",
+          "seasonnumbers": "list of seasons",
+          "seasonyears": "list of seasons years",
+          "epgchannelid": "id глобального канала",
+          "scheduleprogramid": "?",
+          "title": "title",
+          "serialtitle": "serial title",
+          "seasontitle": "season title",
+          "episodetitle": "episode title",
+          "seasonnumber": "number of season",
+          "episodenumber": "number of episode",
+          "lastseason": "number of last season",
+          "episodeids": "для SEASON,SERIAL список ключей эпизодов",
+          "iscube": "Флаг для пакета каналов - кубика",
+          "lcn": "lcn (номер кнопки)",
+          "catchupavailable": "if 1 - catchup available",
+          "catchupstartoveravailable": "?",
+          "posterbackground": "color of background",
+          "ispublic": "HLS public flag",
+          "epgchanneltitle": "Наименование глобального канала",
+          "channelids": "?",
+          "year": "release year",
+          "categoryids": "category ids",
+          "categorynames": "category names",
+          "countryids": "country id",
+          "countryname": "country name",
+          "ishd": "HD or not",
+          "description": "description",
+          "orderweight": "вес",
+          "groupids": "channel/asset group",
+          "groupname": "channel/asset group name",
+          "agerating": "russian rating system",
+          "subscriberrating": "users rating",
+          "mpaarating": "MPAA rating",
+          "kinopoiskrating": "kinopoisk users rating",
+          "imdbrating": "imdb users rating",
+          "startdt": "start date (unixtime)",
+          "enddt": "end date (unixtime)",
+          "datefrom": "subscription start date",
+          "dateto": "subscription end date",
+          "adult": "adult flag",
+          "genreids": "genre ids",
+          "genretitles": "genre titles",
+          "personids": "list of persons",
+          "roleids": "list of roles",
+          "rolenames": "list of roles names",
+          "personnames": "list of persons names",
+          "refbooktitles": "column for recommendation system",
+          "refbooktypes": "column for recommendation system: types",
+          "type": "type of content",
+          "suggest": "Для максимального эпизода RICH,для остальных AUTOCOMPLETE Для MOVIE - RICH",
+          "offerids": "list of offers",
+          "offertaskids": "Таски, через которые оффер висит на этом итеме (это либо родительский итем, либо сам итем)",
+          "offertasktypes": "Тип root таска, через который назначен оффер",
+          "platformids": "Платформы, для которых предназначен итем",
+          "subscriptionnearparentids": "непосредственный родитель - подписка",
+          "packagenearparentids": " непосредственный родитель - пакет",
+          "channelpackagenearparentids": "все родители (всех уровней) пакеты каналов",
+          "channelpackagerootnearparentids": "все родители (всех уровней) root пакеты каналов",
+          "channelpackageparentids": "?",
+          "channelpackagerootparentids": "?",
+          "subscriptionparentids": " все родители (всех уровней) подписки",
+          "packageparentids": "все родители (всех уровней) пакет",
+          "serialparentids": "все родители (всех уровней) сериал",
+          "seasonparentids": " все родители (всех уровней) сезон",
+          "haschild": "Флаг наличия потомков",
+          "resourceids": "?",
+          "resourcesubtypes": "типы ресурсов для ресурсов из resourceIds",
+          "mcastattrs": "Атрибуты ресурса mcast",
+          "hlsattrs": "Атрибуты ресурса hls",
+          "offertype": "?",
+          "offerbillingparams": "?",
+          "offerrightparams": "?",
+          "providerids": "seq:providerId Список провайдеров для офферов из offerIds",
+          "providernames": "Имена провайдеров",
+          "providerheaderid": "seq:providerId Заголовочный providerId",
+          "sdcount": "для CHANNEL_PACKAGE количество каналов SD",
+          "hdcount": "для CHANNEL_PACKAGE количество каналов HD",
+          "hdglobalchannelcounts": "для CHANNEL_PACKAGE,CHANNEL_PACKAGE_ROOT количество глобальных каналов HD с разбивкой по группам",
+          "hdglobalchannelgroups": "для CHANNEL_PACKAGE,CHANNEL_PACKAGE_ROOT группы глобальных каналов HD",
+          "sdglobalchannelcounts": "для CHANNEL_PACKAGE,CHANNEL_PACKAGE_ROOT количество глобальных каналов SD с разбивкой по группам",
+          "sdglobalchannelgroups": "для CHANNEL_PACKAGE,CHANNEL_PACKAGE_ROOT группы глобальных каналов SD",
+          "oldprice": "Старая цена итема (желтый ценник)",
+          "payload": "JSON: moto poster_background poster_background_web tv_series previous_price taxless",
+          "channelsid": "sid канала",
+          "servicetype": "?",
+          "serialexternalid": "?",
+          "channel_pack_billing_id": "Биллинговый ключ пакета каналов",
+          "availablegroup": "Категория доступности для мультискрина для пакета каналов",
+          "forlegalentity": "флаг для Юр. Лица для пакетов каналов",
+          "stream": "CATCHUP или LIVE",
+          "relatedvodassetid": "?",
+          "relatedvodassettype": "?",
+          "isarchival": "Флаг архивного пакета каналов",
+          "hlsdrm": "resource.drm для hls ресурса",
+          "gender": "?",
+          "offertaskids4filter": "?",
+          "propertyofferids": "?",
+          "lcn_order": "?",
+          "channelids4filter": "?",
+          "startday": "?",
+          "endday": "?",
+          "packageparentids4filter": "?",
+          "groupids4filter": "?",
+          "platformids4filter": "?",
+          "personids4filter": "?",
+          "isarchival4filter": "?"
+        }
+      },
+      "event_type": {
+        "comment": "Таблица типов событий в системе рекомендаций",
+        "fields": {
+          "id": "id",
+          "name": ""
+        }
+      },
+      "platform": {
+        "comment": "Таблица платформ в системе рекомендаций",
+        "fields": {
+          "id": "id",
+          "extid": ""
+        }
+      },
+      "recommended_answers": {
+        "comment": "Таблицы с ответами от движка рекомендаций",
+        "fields": {
+          "timestam": "STRING of event (create at the moment consume from kafka)",
+          "answerrecommendationid": "Unique identifier of asset",
+          "subscriberid": "Subscriber Id",
+          "showcaseitemtype": "Type of content",
+          "platformid": "Platform Id",
+          "uuid": "Unique identifier of recomendation",
+          "deviceid": "Device Id",
+          "extidcity": "City Id",
+          "segmentid": "Segment Id",
+          "showcasename": "Recommendation name (type, example \"\"movies-for-you\"\")",
+          "recommendationid": "Recommendation Id (type, example \"\"vod-movies-for-you\"\")",
+          "devicets": "STRING of recomendation service",
+          "reccount": "Number of recomendations in answer",
+          "year": "",
+          "month": ""
+        }
+      },
+      "recommended_answers_v2": {
+        "comment": "доп таблица",
+        "fields": {
+          "timestam": "STRING of event (create at the moment consume from kafka)",
+          "answerrecommendationid": "идентификатор ассета",
+          "subscriberid": "идентификатор пользователя",
+          "showcaseitemtype": "тип рекомендуемых элементов",
+          "platformid": "платформа",
+          "uuid": "уникальный ключ события рекомендации",
+          "deviceid": "идентификатор устройства пользователя",
+          "extidcity": "ключ города",
+          "segmentid": "ключ сегмента пользователя",
+          "showcasename": "название витрины",
+          "recommendationid": "ключ типа рекомендаций (витрины)",
+          "externalsortfield": "тип рекомендованного ассета",
+          "reccount": "количество ассетов в выданной рекомендации",
+          "year": "",
+          "month": ""
+        }
+      },
+      "recommended_answers_v3": {
+        "comment": "Актуальная таблица выданных рекомендаций",
+        "fields": {
+          "timestam": "STRING of event (create at the moment consume from kafka)",
+          "answerrecommendationid": "идентификатор ассета",
+          "subscriberid": "идентификатор пользователя",
+          "showcaseitemtype": "тип рекомендуемых элементов",
+          "platformid": "платформа",
+          "uuid": "уникальный ключ события рекомендации",
+          "deviceid": "идентификатор устройства пользователя",
+          "extidcity": "ключ города",
+          "segmentid": "ключ сегмента пользователя",
+          "showcasename": "название витрины",
+          "recommendationid": "ключ типа рекомендаций (витрины)",
+          "externalsortfield": "тип рекомендованного ассета",
+          "reccount": "количество ассетов в выданной рекомендации",
+          "answerrecommendationidindex": "индекс рекомендованного ассета",
+          "year": "",
+          "month": ""
+        }
+      },
+      "recommended_answers_v3_1": {
+        "comment": "доп таблица",
+        "fields": {
+          "timestam": "STRING of event (create at the moment consume from kafka)",
+          "answerrecommendationid": "идентификатор ассета",
+          "subscriberid": "идентификатор пользователя",
+          "showcaseitemtype": "тип рекомендуемых элементов",
+          "platformid": "платформа",
+          "answerrecommendationidindex": "индекс рекомендованного ассета",
+          "uuid": "уникальный ключ события рекомендации",
+          "deviceid": "дентификатор устройства пользователя",
+          "extidcity": "ключ города",
+          "segmentid": "люч сегмента пользователя",
+          "showcasename": "название витрины",
+          "recommendationid": "ключ типа рекомендаций (витрины)",
+          "externalsortfield": "тип рекомендованного ассета",
+          "reccount": "количество ассетов в выданной рекомендации",
+          "year": "",
+          "month": ""
+        }
+      },
+      "subscriber_agreement": {
+        "comment": "Таблица связей системы рекомендаций с договорами Клиентов",
+        "fields": {
+          "subscriber_id": "Идентификатор подписчика",
+          "city_code": "Код города",
+          "agreement_num": "Номер договора"
+        }
+      },
+      "test_subscriber": {
+        "comment": "Таблица тестовых пользователей",
+        "fields": {
+          "id": "идентификатор",
+          "agreement": "номер договора",
+          "domain": "город (домен)"
+        }
+      },
+      "v3_segment_has_platform_version": {
+        "comment": "Таблица связи сегмента пользователей и платформ",
+        "fields": {
+          "segment_id": "идентификатор сегмента",
+          "platform_id": "ключ платформы",
+          "is_recommendation_system_on": "включена ли система рекомендаций",
+          "date_in": "версионность дата начала версии связи",
+          "date_out": "версионность дата конца версии связи (nullable)"
+        }
+      },
+      "v3_segment_version": {
+        "comment": "Таблица версий сегментов пользователей",
+        "fields": {
+          "id": "идентификатор",
+          "title": "название сегмента",
+          "is_recommendation_system_on": "включена ли система рекомендаций (не используется)",
+          "create_at": "дата создания сегмента",
+          "description": "описание сегмента",
+          "default_flag": "является ли сегментом по умолчанию (если пользователь не входит в другие сегменты, то автоматом попадает в сегмент по умолчанию)",
+          "start_date": "дата начала действия сегмента",
+          "end_date": "дата конца действия сегмента (nullable)",
+          "date_in": "версионность дата начала версии сегмента",
+          "date_out": "версионность дата конца версии сегмента (nullable)"
+        }
+      },
+      "v3_subcriber_config_data_version": {
+        "comment": "Таблица привязки пользователя к сегменту",
+        "fields": {
+          "subscriber_id": "",
+          "segment_id": "ключ сегмента",
+          "update_at": "дата изменения привязки",
+          "start_date": "дата начала действия привязки",
+          "end_date": "дата конца действия привязки (nullable)",
+          "date_in": "версионность дата начала версии привязки",
+          "date_out": "версионность дата конца версии привязки (nullable)"
+        }
+      }
+    }
+  }
+}

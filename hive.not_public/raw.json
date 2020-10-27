@@ -1,0 +1,128 @@
+{
+  "raw": {
+    "alibaba": {
+      "comment": "",
+      "fields": {
+        "bid": "",
+        "ts": "",
+        "ip": "",
+        "login": "",
+        "sni": ""
+      }
+    },
+    "alibaba_raw": {
+      "comment": "",
+      "fields": {
+        "bid": "",
+        "ts": "",
+        "ip": "",
+        "login": "",
+        "sni": ""
+      }
+    },
+    "netflow_dns": {
+      "comment": "",
+      "fields": {
+        "billing_id": "",
+        "ts": "",
+        "ip": "",
+        "login": ""
+      }
+    },
+    "netflow_https": {
+      "comment": "",
+      "fields": {
+        "billing_id": "Billing ID",
+        "ts": "Unix timestamp",
+        "ip": "Clients ip",
+        "login": "Clients login",
+        "domen": "Http domain"
+      }
+    },
+    "pv_routers_domain_billing_id": {
+      "comment": "",
+      "fields": {
+        "name": "",
+        "billing_id": "",
+        "domain": ""
+      }
+    },
+    "pv_routers_single_clients": {
+      "comment": "",
+      "fields": {
+        "billing_id": "",
+        "city": "",
+        "terminal_resource": "",
+        "mac_address": "",
+        "host_name": "",
+        "presence_days_count": ""
+      }
+    },
+    "radius_test": {
+      "comment": "",
+      "fields": {
+        "storedat": "",
+        "client": "Client\\",
+        "cityid": "City ID",
+        "session": "Session ID",
+        "status": "Current status of session",
+        "nasid": "NAS IS",
+        "duration": "Duration of current session",
+        "atcause": "Cause of terminate",
+        "startedat": "Time of session start",
+        "updatedat": "Time of session update",
+        "stopedat": "Time of session stop",
+        "inetout": "Count for INET out",
+        "inetin": "Count for INET in",
+        "localout": "Count for LOCAL out",
+        "localin": "Count for LOCAL in",
+        "mac": "Client mac",
+        "rmac": "Router MAC address",
+        "ip": "Client IP",
+        "vlan": "Client VLAN",
+        "nasportid": "",
+        "profile": "",
+        "authid": "Client type",
+        "stored": "",
+        "started": "",
+        "updated": "",
+        "stoped": ""
+      }
+    },
+    "single_clients_demography": {
+      "comment": "",
+      "fields": {
+        "billing_id": "",
+        "city": "",
+        "terminal_resource": "",
+        "mac_address": "",
+        "host_name": "",
+        "presence_days_count": "",
+        "poll_count": "",
+        "client_id": "",
+        "surname": "",
+        "name": "",
+        "patronymic": "",
+        "birthdate": "",
+        "gender": "",
+        "ethnics": "",
+        "passport": "",
+        "terminal_resource_id": "",
+        "addendum_id": ""
+      }
+    },
+    "tmp_host_data_clients": {
+      "comment": "",
+      "fields": {
+        "billing_id": "",
+        "city": ""
+      }
+    },
+    "tmp_logins": {
+      "comment": "",
+      "fields": {
+        "billing_id": ""
+      }
+    }
+  }
+}

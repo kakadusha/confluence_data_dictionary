@@ -1,0 +1,54 @@
+{
+  "pixel_wifi": {
+    "description":"Данные с портала авторизации Wi-Fi[pixel_wifi|https://kb.ertelecom.ru/pages/viewpage.action?pageId=281878965]",
+    "tables": {
+      "wifi": {
+        "comment": "Data from wifi capture portals",
+        "fields": {
+          "loginid": "Значение логина из поля формы (договор, телефон, почта)",
+          "acctid": "Сессия устройства",
+          "deviceip": "IP адрес устройства клиента",
+          "devicemac": "МАК адрес устройства клиента",
+          "locationid": "VLAN точки доступа",
+          "pageid": "URI текущей страницы",
+          "routerid": "Марка браса",
+          "clientts": "Timestamp",
+          "datehourminute": "Timestamp of event",
+          "client_id": "Client Id",
+          "ua": "User Agent",
+          "ip": "User IP",
+          "puid": "Domru cookie",
+          "http_ref": "HTTP referer",
+          "citydomain": "Cookie citydomain on site domru.ru",
+          "userid": "Логин пользователь в биллинге",
+          "vkid": "ID пользователя в соц. сети ВКонтакте",
+          "okid": "ID пользователя в соц. сети Одноклассники",
+          "fbid": "ID пользователя в соц. сети Facebook",
+          "twid": "ID пользователя в соц. сети Twitter",
+          "instid": "ID пользователя в соц. сети Instagram",
+          "cityid": "ID города местоложения точки (как в биллинге)",
+          "browser_name": "Марка браузера",
+          "browser_version": "Версия браузера",
+          "os_name": "Марка ОС",
+          "os_version": "Версия ОС",
+          "device": "Устройство",
+          "language": "Язык ОС",
+          "year": "Год",
+          "month": "Месяц"
+        }
+      },
+      "wifi_failed": {
+        "comment": "Failed packets for wifi.domru.ru",
+        "fields": {
+          "key": "Technical info",
+          "value": "Technical info",
+          "topic": "Technical info",
+          "partition": "Technical info",
+          "offset": "Technical info",
+          "timestamp": "Technical info",
+          "timestamptype": "Technical info"
+        }
+      }
+    }
+  }
+}

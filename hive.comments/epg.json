@@ -1,0 +1,80 @@
+{
+  "epg": {
+    "description":"",
+    "tables": {
+      "epg": {
+        "comment": "Electronic Program Guide",      
+        "fields": {
+          "upd_date_ch":"Дата обновления",
+          "date_programme":"Дата публикации",
+          "year_programme":"Год или годы создания",
+          "id_channel":"Идентификатор канала",
+          "display_name_text":"Отображаемое имя канала",
+          "channel_icon":"Эмблема канала",
+          "start_programme_dbg":"Отладочное поле: original time as string",
+          "start_programme":"Время начала программы",
+          "stop_programme": "Время окончания программы",
+          "duration_programme": "Длительность телепередачи, сек.",
+          "domru_channel": "Dom.ru канал",
+          "epgsrvc_channel": "Epgsrvc канал",
+          "external_id_programme": "Внешний ID передачи",
+          "id_programme": "ID передачи",
+          "text_name_programme": "Название телепередачи",
+          "text_name_sub_programme": "Название части телепередачи",
+          "episode_number": "Эпизод",
+          "season": "Сезон",
+          "smile_desc": "Smile-описание",
+          "normal_desc": "Normal-описание",
+          "large_desc": "Large-описание",
+          "smile_sub_desc": "Smile-описание фрагмента",
+          "normal_sub_desc": "Normal-описание фрагмента",
+          "large_sub_desc": "Large-описание фрагмента",
+          "id_category": "ID категории",
+          "text_name_category": "Имя категории",
+          "rating_system": "Рейтинговая система",
+          "rating_value": "Величина рейтинга",
+          "kinpoisk_rating": "Рейтинг в Кинопоиск",
+          "id_kinpoisk": "Идентификатор в Кинопоиск",
+          "id_imdb": "Идентификатор в IMDB",
+          "week": "Неделя когда таблица загружена",
+          "year": "Год загрузки"
+        }
+      },
+      "chtp_cktv": {
+        "comment": "Частотно территориальный план ЦКТВ mgmt.hq.ertelecom.ru/chtp/grid/type/221",
+        "fields": {
+          "reg_id": "ID региона, mapping.cities",
+          "reg_name": "Название региона",
+          "billing_city_id": "STRID-региона, mapping.cities",
+          "boundles": "Пакетизация",
+          "enc_131_open": "Шифрование (131 открытых)",
+          "LCN": "Порядковый номер канала",
+          "channel": "Канал",
+          "Genre": "Жанр",
+          "ratio_cktv": "Рейтинг ЦКТВ",
+          "aspect_ratio": "Соотношение сторон",
+          "Scr": "Scr Вых. группа",
+          "SD_HD": "SD/HD",
+          "sid": "Stream ID",
+          "enc_152_open": "Шифрование (152 открытых)",
+          "enc_194_open": "Шифрование (194 открытых)",
+          "sound": "Звук",
+          "distr_channel": "Канал распределения",
+          "freq_cktv": "Частота ЦКТВ",
+          "url_hls": "URL HLS",
+          "output_group": "IPTV Вых. группа",
+          "LCN_alt": "LCN alt",
+          "local_source": "Локальный источник",
+          "tech_name": "Тех. название loc",
+          "channel_local": "Канал LOCAL",
+          "hour_version": "Часовая версия",
+          "signal_type": "Тип сигнала",
+          "IP_mcast_Loc": "IP mcast Loc",
+          "IP_Port_Loc": "IP Port Loc",
+          "SID_Loc": "SID Loc",
+          "comments": "Примечание"
+        }
+      }
+    }
+  }
+}

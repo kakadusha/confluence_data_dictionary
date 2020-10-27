@@ -1,0 +1,14 @@
+connections.json
+credentials.json
+conf.json
+conf_new.json
+checklist.json
+meta*.json
+worklist.json
+*.dbg
+.idea/
+.vscode/
+*.pyc
+__pycache__/
+ertelecom/__pycache__/
+

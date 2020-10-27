@@ -1,0 +1,28 @@
+{
+  "information_schema": {
+    "column_privileges": {
+      "comment": "",
+      "fields": {}
+    },
+    "columns": {
+      "comment": "",
+      "fields": {}
+    },
+    "schemata": {
+      "comment": "",
+      "fields": {}
+    },
+    "table_privileges": {
+      "comment": "",
+      "fields": {}
+    },
+    "tables": {
+      "comment": "",
+      "fields": {}
+    },
+    "views": {
+      "comment": "",
+      "fields": {}
+    }
+  }
+}

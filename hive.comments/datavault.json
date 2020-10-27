@@ -1,0 +1,154 @@
+{
+  "datavault": {
+    "description":"",
+    "tables": {    
+      "client_entity": {
+        "comment": "демография клиента ",
+        "fields": {
+          "client_id": "ид клиента",
+          "sirname": "фамилия",
+          "firstname": "имя",
+          "middlename": "отчество",
+          "birthdate": "дата рождения",
+          "gender": "м/ж",
+          "ethnics": "национальность",
+          "passport": "паспорт",
+          "billing_id": "ID биллинга"
+        },
+        "sample_hide": true
+      },
+      "cadastr": {
+        "comment": "информация о площади и стоимости кадастровых объектов",
+        "fields": {
+          "type": "тип кадастрового объекта",
+          "cadastr_id": "кадастровый номер",
+          "address": "адрес объекта",
+          "square": "площадь объекта",
+          "price": "кадастровая стоимость объекта"
+        },
+        "sample_hide": true
+      },
+      "client_address": {
+        "comment": "информация об адресе клиента",
+        "fields": {
+          "cl_id_bi": "ID клиента в BI",
+          "client_id": "ID клиента в биллинге",
+          "cl_city": "город клиента",
+          "cl_street": "улица",
+          "cl_house": "номер дома",
+          "cl_flat": "квартира",
+          "square_flat": "площадь кавртиры",
+          "billing_id": "ID биллинга"
+        },
+        "sample_hide": true
+      },
+      "client_devices": {
+        "comment": "информация об устройствах клиента",
+        "fields": {
+          "billing_id": "ID биллинга",
+          "client_id": "ID клиента в биллинге",
+          "agreement_number": "номер договора",
+          "login_name": "логин клиента",
+          "interface_type":"тип подключения устройства к сети",
+          "device_type": "тип устройства",
+          "mac_address": "MAC-адрес устройства",
+          "host_name": "имя устройства в сети",
+          "presence_days_count": "",
+          "poll_count": "",
+          "created_at": "дата создания записи",
+          "period": ""
+        },
+        "sample_hide": true
+      },
+      "client_entity_cadastr": {
+        "comment": "информация о площади и кадастроовй стоимости жилья клиента",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "billing_id": "ID биллинга",
+          "cadastr_id": "кадастровый номер",
+          "square": "площадь",
+          "price": "кадастровая стоимость"
+        },
+        "sample_hide": true
+      },
+      "client_entity_cadastr_square": {
+        "comment": "информация о площади жилья клиента",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "billing_id": "ID биллинга",
+          "cadastr_id": "кадастровый номер",
+          "square": "площадь"
+        },
+        "sample_hide": true
+      },
+      "client_gender_ethnics": {
+        "comment": "пол и этническая принадлежность клиента",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "billing_id": "ID биллинга",
+          "sirname": "фамилия",
+          "firstname": "имя",
+          "middlename": "отчество",
+          "birthdate": "дата рождения",
+          "passport": "",
+          "gender": "пол",
+          "ethnics": "национальность"
+        },
+        "sample_hide": true
+      },
+      "client_phone_operator": {
+        "comment": "информация о телефонах и операторах клиентов",
+        "fields": {
+          "client_phone_id": "",
+          "client_id": "ID клиента в биллинге",
+          "billing_id": "ID биллинга",
+          "phone_number": "номер телефона клиента",
+          "operator": "оператор сотовой связи, обслуживающий номер"
+        },
+        "sample_hide": true
+      },
+      "clients_all_normalized": {
+        "comment": "общая информация о клиентах",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "billing_id": "ID биллинга",
+          "sirname": "фамилия",
+          "firstname": "имя",
+          "middlename": "отчество",
+          "birthdate": "дата рождения клиента",
+          "passport": "паспорт"
+        },
+        "sample_hide": true
+      },
+      "namesdict": {
+        "comment": "",
+        "fields": {
+          "rectype": "",
+          "lett": "",
+          "name": "",
+          "ethnic": "",
+          "gender": ""
+        },
+        "sample_hide": true
+      },
+      "single_clients": {
+        "comment": "",
+        "fields": {
+          "billing_id": "ID биллинга",
+          "client_id": "ID клиента в биллинге",
+          "agreement_number": "номер договора",
+          "login_name": "логин клиента",
+          "interface_type": "тип подключения устройства к сети",
+          "device_type": "тип устройства",
+          "mac_address": "MAC-адрес устройства",
+          "host_name": "имя устройства в сети",
+          "presence_days_count": "",
+          "poll_count": "",
+          "created_at": "дата создания записи",
+          "period": ""
+        },
+        "sample_hide": true
+      }
+    }
+  }
+}

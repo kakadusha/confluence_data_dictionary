@@ -1,0 +1,343 @@
+{
+  "default": {
+    "activate_license_fee_all_base": {
+      "comment": "",
+      "fields": {
+        "activity_id": "from deserializer",
+        "addendum_id": "from deserializer",
+        "plan_item_id": "from deserializer",
+        "active_from": "from deserializer",
+        "active_to": "from deserializer",
+        "count_service": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "addenda_all_base": {
+      "comment": "",
+      "fields": {
+        "addendum_id": "from deserializer",
+        "addendum_number": "from deserializer",
+        "plan_id": "from deserializer",
+        "agreement_id": "from deserializer",
+        "attr_entity_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "addendum_resources_all_base": {
+      "comment": "",
+      "fields": {
+        "ar_id": "from deserializer",
+        "resource_id": "from deserializer",
+        "active_from": "from deserializer",
+        "active_to": "from deserializer",
+        "addendum_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "adv_act_link_activate_lf_all_base": {
+      "comment": "",
+      "fields": {
+        "activity_id": "from deserializer",
+        "action_id": "from deserializer",
+        "flag_link_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "calls_all_base": {
+      "comment": "",
+      "fields": {
+        "session_id": "from deserializer",
+        "zi_id": "from deserializer",
+        "opponent_number": "from deserializer",
+        "terminal_resource_id": "from deserializer",
+        "call_type_id": "from deserializer",
+        "call_raw_id": "from deserializer",
+        "duration_rounded": "from deserializer",
+        "duration": "from deserializer",
+        "time_stop": "from deserializer",
+        "data_source_id": "from deserializer",
+        "territory_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "cch_result_calc_all_base": {
+      "comment": "",
+      "fields": {
+        "result_calc_id": "from deserializer",
+        "date_change": "from deserializer",
+        "ch_log_owner": "from deserializer",
+        "user_id": "from deserializer",
+        "log_id": "from deserializer",
+        "addendum_id": "from deserializer",
+        "addendum2_id": "from deserializer",
+        "subdivision_id": "from deserializer",
+        "manager_id": "from deserializer",
+        "service_id": "from deserializer",
+        "old_value": "from deserializer",
+        "affect_date": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "billing_id": "from deserializer",
+        "value": "from deserializer",
+        "info": "from deserializer"
+      }
+    },
+    "charge_link_bills_all_base": {
+      "comment": "",
+      "fields": {
+        "charge_link_bills_id": "from deserializer",
+        "charge_id": "from deserializer",
+        "bill_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "charges_all_base": {
+      "comment": "",
+      "fields": {
+        "charge_id": "from deserializer",
+        "timestamp": "from deserializer",
+        "value": "from deserializer",
+        "currency_id": "from deserializer",
+        "addendum_id": "from deserializer",
+        "service_id": "from deserializer",
+        "zone_id": "from deserializer",
+        "product_id": "from deserializer",
+        "value_w_nds": "from deserializer",
+        "rule_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "billing_id": "from deserializer",
+        "discount_rule_id": "from deserializer",
+        "discount_coef": "from deserializer"
+      }
+    },
+    "dwh_charges_details_all_base": {
+      "comment": "",
+      "fields": {
+        "dwh_charge_id": "from deserializer",
+        "company_id": "from deserializer",
+        "value": "from deserializer",
+        "dep_id": "from deserializer",
+        "billing_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "invoice_item_id": "from deserializer",
+        "dwh_det_charge_id": "from deserializer"
+      }
+    },
+    "executer_links_all_base": {
+      "comment": "",
+      "fields": {
+        "executer_link_id": "from deserializer",
+        "state_step_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "request_state_id": "from deserializer",
+        "billing_id": "from deserializer",
+        "request_this_active": "from deserializer"
+      }
+    },
+    "flag_link_props_all_base": {
+      "comment": "",
+      "fields": {
+        "flag_link_prop_id": "from deserializer",
+        "sa_real_imp_date": "from deserializer",
+        "flag_link_id": "from deserializer",
+        "flag_prop_id": "from deserializer",
+        "active_from": "from deserializer",
+        "active_to": "from deserializer",
+        "value_int": "from deserializer",
+        "value_char": "from deserializer",
+        "value_date": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "flag_links_all_base": {
+      "comment": "",
+      "fields": {
+        "flag_id": "from deserializer",
+        "agreement_id": "from deserializer",
+        "flag_link_id": "from deserializer",
+        "user_id": "from deserializer",
+        "sa_real_imp_date": "from deserializer",
+        "change_date": "from deserializer",
+        "close_date": "from deserializer",
+        "close_user_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "house_material_costs_all_base": {
+      "comment": "",
+      "fields": {
+        "cost_id": "from deserializer",
+        "teo_id": "from deserializer",
+        "close_date": "from deserializer",
+        "house_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "count_materials": "from deserializer",
+        "insert_date": "from deserializer",
+        "addendum_id": "from deserializer",
+        "invoice_number": "from deserializer",
+        "billing_id": "from deserializer",
+        "series_id": "from deserializer"
+      }
+    },
+    "mrk_calls_all_base": {
+      "comment": "",
+      "fields": {
+        "mrk_call_id": "from deserializer",
+        "system_id": "from deserializer",
+        "time_start": "from deserializer",
+        "time_stop": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "client_phone": "from deserializer",
+        "client_id": "from deserializer",
+        "queue_id": "from deserializer",
+        "billing_id": "from deserializer",
+        "call_code": "from deserializer"
+      }
+    },
+    "pppoe_last_sessions_all_base": {
+      "comment": "",
+      "fields": {
+        "session_id": "from deserializer",
+        "addendum_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "billing_id": "from deserializer",
+        "last_date_session": "from deserializer"
+      }
+    },
+    "pppoe_sessions_all_base": {
+      "comment": "",
+      "fields": {
+        "session_id": "from deserializer",
+        "terminal_resource_id": "from deserializer",
+        "data_source_id": "from deserializer",
+        "ip": "from deserializer",
+        "time_stop": "from deserializer",
+        "duration": "from deserializer",
+        "mac_address": "from deserializer",
+        "physical_access_unit": "from deserializer",
+        "check_sum": "from deserializer",
+        "duration_rounded": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "pr_proc_request_state_all_base": {
+      "comment": "",
+      "fields": {
+        "request_state_id": "from deserializer",
+        "step_id": "from deserializer",
+        "remind_boss_after": "from deserializer",
+        "billing_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "executer_id": "from deserializer",
+        "se_user_id": "from deserializer",
+        "info": "from deserializer",
+        "request_id": "from deserializer",
+        "group_id": "from deserializer",
+        "active_from": "from deserializer"
+      }
+    },
+    "pr_proc_requests_all_base": {
+      "comment": "",
+      "fields": {
+        "request_id": "from deserializer",
+        "plan_request_execute": "from deserializer",
+        "quality": "from deserializer",
+        "plan_request_stop": "from deserializer",
+        "request_stop": "from deserializer",
+        "request_start": "from deserializer",
+        "owner": "from deserializer",
+        "attr_entity_id": "from deserializer",
+        "proc_id": "from deserializer",
+        "brigade_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "billing_id": "from deserializer",
+        "office_comment": "from deserializer",
+        "office": "from deserializer",
+        "this_active": "from deserializer",
+        "parent_request_id": "from deserializer",
+        "last_step_id": "from deserializer",
+        "house_id": "from deserializer"
+      }
+    },
+    "pr_request_add_attr_all_base": {
+      "comment": "",
+      "fields": {
+        "add_attr_id": "from deserializer",
+        "add_attr_type_id": "from deserializer",
+        "request_id": "from deserializer",
+        "n_val": "from deserializer",
+        "val_str": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "qs_req_asnwer_links_all_base": {
+      "comment": "",
+      "fields": {
+        "req_asnw_link_id": "from deserializer",
+        "answer_id": "from deserializer",
+        "sa_import_date": "from deserializer",
+        "time_stamp": "from deserializer",
+        "billing_id": "from deserializer",
+        "request_id": "from deserializer"
+      }
+    },
+    "resource_contents_all_base": {
+      "comment": "",
+      "fields": {
+        "resource_id": "from deserializer",
+        "active_from": "from deserializer",
+        "active_to": "from deserializer",
+        "res_cont_id": "from deserializer",
+        "terminal_resource_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "rules_all_base": {
+      "comment": "",
+      "fields": {
+        "rule_id": "from deserializer",
+        "rule_impl_id": "from deserializer",
+        "operation_type_id": "from deserializer",
+        "billing_id": "from deserializer"
+      }
+    },
+    "sa_aa_b2c_alf_with_periods_base": {
+      "comment": "",
+      "fields": {
+        "active_id": "from deserializer",
+        "d_type_client_sim": "from deserializer",
+        "pay_scheme_type_id": "from deserializer",
+        "agreement_id": "from deserializer",
+        "product_id": "from deserializer",
+        "plan_id": "from deserializer",
+        "client_id": "from deserializer",
+        "f_house_id": "from deserializer",
+        "f_office": "from deserializer",
+        "date_from": "from deserializer",
+        "date_to": "from deserializer",
+        "project_id": "from deserializer"
+      }
+    },
+    "sniffers_ex_tsv": {
+      "comment": "",
+      "fields": {
+        "day": "",
+        "sensor": "",
+        "cnt": "",
+        "uniq_cnt": "",
+        "cnt_month": ""
+      }
+    },
+    "test_timestamp": {
+      "comment": "",
+      "fields": {}
+    },
+    "test_timestamp_2": {
+      "comment": "",
+      "fields": {}
+    },
+    "test_timestamp_3": {
+      "comment": "",
+      "fields": {}
+    }
+  }
+}

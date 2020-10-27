@@ -1,0 +1,37 @@
+{
+  "c4wi": {
+    "description":"Исторические данные аккаунтинга Энфорты, описание отсутствует [c4wi|https://kb.ertelecom.ru/pages/viewpage.action?pageId=294867466]",
+    "tables": {
+      "customers": {
+        "comment": "Данные клиентов (предположительно)",
+        "fields": {
+        }
+      },
+      "customers_old": {
+        "comment": "Данные клиентов, более старая, архивная таблица (предположительно)",
+        "fields": {
+        }
+      },
+      "customers_oauth_provider": {
+        "comment": "Аунтификация через соцсети (предположительно)",
+        "fields": {
+        }
+      },
+      "customers_services": {
+        "comment": "Подписки на сервисы (предположительно)",
+        "fields": {
+        }
+      },
+      "mac_address_customer": {
+        "comment": "MAC адреса клиентов (предположительно)",
+        "fields": {
+        }
+      },
+      "radius_accountings_history": {
+        "comment": "История соединений (предположительно)",
+        "fields": {
+        }
+      }
+    }
+  }
+}

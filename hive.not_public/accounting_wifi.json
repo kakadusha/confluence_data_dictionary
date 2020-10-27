@@ -1,0 +1,12 @@
+{
+  "accounting_wifi": {
+    "phones": {
+      "comment": "",
+      "fields": {
+        "billing_id": "",
+        "mac": "",
+        "phone": ""
+      }
+    }
+  }
+}

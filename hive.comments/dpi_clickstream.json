@@ -1,0 +1,30 @@
+{
+  "dpi_clickstream": {
+    "description":"",
+    "tables": {    
+      "clickstream": {
+          "comment": "поток данных по посещенным клиентом страницам http(главным страницам)",
+        "fields": {
+          "timestamp_local": "Локальная дата и время в городе",
+          "timestamp_utc": "Дата и время по UTC",
+          "login": "Логин клиента",
+          "url": "URL",
+          "ip": "IP адрес клиента",
+          "ua": "User-agent из запроса",
+          "cookie1": "Уникальный идентификтор пользователя (поле rambler_ruid из cookies)",
+          "cookie2": "Уникальный идентификтор пользователя (поле yandex_uid из cookies)",
+          "cookie3": "Уникальный идентификтор пользователя (поле weborama_affice из cookies)",
+          "browser_name": "Наименование браузера",
+          "browser_version": "Версия браузера",
+          "os_name": "Наименование ОС",
+          "os_version": "Версия ОС",
+          "device": "Наименование устройства",
+          "mac": "MAC адрес роутера",
+          "router_manufacturer": "Производитель роутера",
+          "date_local": "Дата ",
+          "city_id": "Идентификатор города"
+        }
+      }
+    }
+  }
+}

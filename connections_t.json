@@ -1,0 +1,28 @@
+{
+    "confluence": {
+        "user": "{KB_LOGIN}",
+        "password": "{KB_PASSW}"
+     },
+    "hive": {
+        "kb_page": 279071228,
+        "kb_page_comment": "1.2.2 Hive, https://kb.ertelecom.ru/pages/viewpage.action?pageId=279071228",
+        "kb_page_debug": 345258453,
+        "comments_path": "hive.comments/",
+        "host": "spb99-hdp-nn01.ertelecom.ru",
+        "username": "{HIVE_LOGIN}",
+        "password": "{HIVE_PASSW}",
+        "auth": "LDAP"
+    },
+   "clickhouse": {
+        "kb_page": 313746055,
+        "kb_page_comment": "1.2.11. Clickhouse, https://kb.ertelecom.ru/display/BD/viewpage.action?pageId=313746055",
+        "kb_page_debug": 345258453,
+        "comments_path": "ch.comments/",
+        "host": "10.124.65.218",
+        "username": "accnt_r", 
+        "password": "EXxPqxsOuU",
+        "database2connect": "wifi_accnt",
+        "secure": false,
+        "compression": false
+    }
+}

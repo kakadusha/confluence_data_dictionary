@@ -1,0 +1,41 @@
+{
+  "routers": {
+    "description":"",
+    "tables": {
+      "routers_data": {
+        "comment": "Данные мониторинга роутеров",
+        "fields": {
+          "monitoring_date": "Дата опроса роутера",
+          "monitoring_timestamp": "Время опроса роутера",
+          "device_id": "Уникальный идентификатор устройства",
+          "hostmodel_id": "Идентификатор модели роутера",
+          "terminal_resource": "PPPOE логин",
+          "method_name": "Метод опроса (tr-069 или telnet)",
+          "city": "Город",
+          "monitoring_task_id": "Идентификатор задачи, которая запрашивает данные роутера",
+        "data": "Массив метрик роутера",
+          "year": "",
+          "month": "",
+          "day": ""
+        }
+      },
+      "wifi_radar": {
+        "comment": "Данные сканирования сетей, соседствующих с сетью роутера",
+        "fields": {
+          "monitoring_date": "Дата опроса роутера",
+          "monitoring_timestamp": "Таймстам опроса роутера",
+          "device_id": "Уникальный идентификатор устройства",
+          "hostmodel_id": "Идентификатор модели роутера",
+          "terminal_resource": "PPPOE логин",
+          "method_name": "Метод опроса (tr-069 или telnet)",
+          "city": "Город",
+          "monitoring_task_id": "Идентификатор задачи, которая запрашивает данные роутера",
+        "data": "Параметры соседствующих сетей",
+          "year": "",
+          "month": "",
+          "day": ""
+        }
+      }
+    }
+  }
+}

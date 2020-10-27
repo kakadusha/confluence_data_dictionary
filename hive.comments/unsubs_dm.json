@@ -1,0 +1,163 @@
+{
+  "unsubs_dm": {
+    "description":"",
+    "tables": {
+      "pre_unsub_flg": {
+        "comment": "вспомогательная таблица",
+        "fields": {
+          "agreement_number": "",
+          "agreement_id": "",
+          "client_id": "",
+          "flag_link_id": "",
+          "user_id": "",
+          "flag_id": "",
+          "billing_id": ""
+        }
+      },
+      "pre_unsub_prop": {
+        "comment": "вспомогательная таблица",
+        "fields": {
+          "agreement_number": "",
+          "agreement_id": "",
+          "client_id": "",
+          "flag_link_id": "",
+          "user_id": "",
+          "flag_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "billing_id": ""
+        }
+      },
+      "pre_unsub_usr": {
+        "comment": "вспомогательная таблица",
+        "fields": {
+          "agreement_number": "",
+          "agreement_id": "",
+          "client_id": "",
+          "flag_link_id": "",
+          "user_id": "",
+          "flag_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "user_name": "",
+          "billing_id": ""
+        }
+      },
+      "pre_unsubs": {
+        "comment": "вспомогательная таблица",
+        "fields": {
+          "agreement_number": "",
+          "client_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "user_name": "",
+          "billing_id": "",
+          "calc_period": ""
+        }
+      },
+      "pre_unsubs_v2": {
+        "comment": "",
+        "fields": {
+          "agreement_number": "",
+          "client_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "user_name": "",
+          "billing_id": "",
+          "calc_period": ""
+        }
+      },
+      "tmp_aggr_flag": {
+        "comment": "",
+        "fields": {
+          "agreement_number": "",
+          "agreement_id": "",
+          "billing_id": "",
+          "client_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "user_id": "",
+          "flag_id": ""
+        }
+      },
+      "tmp_aggr_flag_xml": {
+        "comment": "",
+        "fields": {
+          "agreement_number": "",
+          "agreement_id": "",
+          "billing_id": "",
+          "client_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "user_id": "",
+          "flag_id": "",
+          "user_name": ""
+        }
+      },
+      "unsubs": {
+        "comment": "Данные по отпискам по активным клиентам",
+        "fields": {
+          "agreement_number": "номер договора",
+          "client_id": "идентификатор клиента",
+          "prop_name": "канал отписки",
+          "active_from": "активно от",
+          "active_to": "активно до",
+          "value_int": "факт отписки",
+          "user_name": "инициатор отписки",
+          "calc_period": ""
+        }
+      },
+      "unsubs_month": {
+        "comment": "Данные по отпискам по активным клиентам за месяц",
+        "fields": {
+          "agreement_number": "номер договора",
+          "client_id": "идентификатор клиента",
+          "prop_name": "канал отписки",
+          "value_int": "факт отписки",
+          "unsub_fact_curr_period": "1, если в текущем периоде был факт отписки",
+          "unsub_fact_end_period": "1, если на конец периода все еще отписан",
+          "user_name": "инициатор отписки",
+          "calc_period": ""
+        }
+      },
+      "unsubs_month_v2": {
+        "comment": "",
+        "fields": {
+          "agreement_number": "",
+          "client_id": "",
+          "prop_name": "",
+          "value_int": "",
+          "unsub_fact_curr_period": "",
+          "unsub_fact_end_period": "",
+          "user_name": "",
+          "calc_period": ""
+        }
+      },
+      "unsubs_v2": {
+        "comment": "",
+        "fields": {
+          "agreement_number": "",
+          "client_id": "",
+          "prop_name": "",
+          "active_from": "",
+          "active_to": "",
+          "value_int": "",
+          "user_name": "",
+          "calc_period": ""
+        }
+      }
+    }
+  }
+}

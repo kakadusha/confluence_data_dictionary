@@ -1,0 +1,2362 @@
+{
+  "billing_source": {
+    "description":"",
+    "tables": {
+      "contact_emails_all": {
+        "comment": "",
+        "fields": {
+          "client_id": "",
+          "contact_email_id": "",
+          "email": "",
+          "type_id": "",
+          "billing_id": "",
+          "sa_import_date": "",
+          "active_from": "",
+          "active_to": "",
+          "confirm_date": ""
+        }
+      },
+      "addendum_company_links_all": {
+        "comment": "",
+        "fields": {
+          "link_id": "",
+          "addendum_id": "",
+          "company_id": "",
+          "company_network_id": "",
+          "active_from": "",
+          "active_to": "",
+          "con_type_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "cable_city_con_types_all": {
+        "comment": "",
+        "fields": {
+          "con_type_id": "",
+          "con_type_name": "",
+          "sa_import_date": ""
+        }
+      },
+      "cable_city_term_res_props_all": {
+        "comment": "",
+        "fields": {
+          "term_res_prop_id": "",
+          "terminal_resource_id": "",
+          "prop_id": "",
+          "prop_value": "",
+          "active_from": "",
+          "active_to": "",
+          "sa_import_date": ""
+        }
+      },
+      "client_properties_all": {
+        "comment": "",
+        "fields": {
+          "cp_id": "",
+          "client_id": "",
+          "prop_type_id": "",
+          "prop_value": "",
+          "active_from": "",
+          "active_to": "",
+          "sa_import_date": "",
+          "value_num": ""
+        }
+      },
+      "dc_serv_prop_link_all": {
+        "comment": "",
+        "fields": {
+          "prop_id": "",
+          "ds_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "dc_serv_prop_link_teo_all": {
+        "comment": "",
+        "fields": {
+          "dsplt_id": "",
+          "prop_id": "",
+          "teo_id": "",
+          "active_from": "",
+          "active_to": "",
+          "sa_import_date": ""
+        }
+      },
+      "dc_services_all": {
+        "comment": "",
+        "fields": {
+          "ds_id": "",
+          "ds_name": "",
+          "description": "",
+          "active_from": "",
+          "active_to": "",
+          "sa_import_date": ""
+        }
+      },
+      "phone_numbers_all": {
+        "comment": "",
+        "fields": {
+          "terminal_resource_id": "",
+          "phone_number": "",
+          "phone_number_set_id": "",
+          "phone_type_id": "",
+          "phone_state_id": "",
+          "show_in_directory": "",
+          "sa_import_date": ""
+        }
+      },
+      "tech_addendum_links_all": {
+        "comment": "",
+        "fields": {
+          "tech_addendum_link_id": "",
+          "tech_type_link_id": "",
+          "addendum_id": "",
+          "active_from": "",
+          "active_to": "",
+          "sa_import_date": ""
+        }
+      },
+      "pc_projects_all": {
+        "comment": "",
+        "fields": {
+          "project_id": "",
+          "project_name": "",
+          "client_id": "",
+          "attr_entity_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "pc_interaction_journal_all": {
+        "comment": "",
+        "fields": {
+          "pc_ij_id": "",
+          "manager_id": "",
+          "project_id": "",
+          "interaction_type_id": "",
+          "contact_id": "",
+          "interaction_date": "",
+          "text_comment": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "pc_project_link_teo_all": {
+        "comment": "",
+        "fields": {
+          "teo_id": "",
+          "project_id": "",
+          "create_date": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "pc_point_plugins_project_all": {
+        "comment": "",
+        "fields": {
+          "point_plugin_proj_id": "",
+          "project_id": "",
+          "house_id": "",
+          "office": "",
+          "attr_entity_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "pc_project_info_all": {
+        "comment": "",
+        "fields": {
+          "proj_info_id": "",
+          "project_id": "",
+          "manager_id": "",
+          "project_info_type_id": "",
+          "description": "",
+          "active_from": "",
+          "active_to": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "pc_info_dict_all": {
+        "comment": "",
+        "fields": {
+          "dict_id": "",
+          "info_type_id": "",
+          "dict_val": "",
+          "parent_dict_id": "",
+          "active_from": "",
+          "active_to": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "activate_license_fee_all": {
+        "comment": "Услуги на приложении",
+        "fields": {
+          "rowid": "from deserializer",
+          "activity_id": "from deserializer",
+          "addendum_id": "from deserializer",
+          "plan_item_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "count_service": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "addenda_all": {
+        "comment": "Приложения на договоре",
+        "fields": {
+          "addendum_id": "",
+          "attr_entity_id": "from deserializer",
+          "agreement_id": "from deserializer",
+          "plan_id": "from deserializer",
+          "addendum_number": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "addendum_resources_all": {
+        "comment": "Связка приложений и терминальных ресурсов (смотреть только в связке с таблицей resourse_contents_all)",
+        "fields": {
+          "ar_id": "",
+          "addendum_id": "from deserializer",
+          "resource_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "adv_act_link_activate_lf_all": {
+        "comment": "",
+        "fields": {
+          "rowid": "from deserializer",
+          "activity_id": "from deserializer",
+          "action_id": "from deserializer",
+          "flag_link_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "adv_actions_all": {
+        "comment": "",
+        "fields": {
+          "action_id": "",
+          "flag_id": "",
+          "agreement_type_id": "",
+          "product_id": "",
+          "plan_group_id": "",
+          "city_id": "",
+          "active_from": "",
+          "active_to": "",
+          "infl_penalty": "",
+          "infl_abpay": "",
+          "infl_connect": "",
+          "infl_dox": "",
+          "plan_id": "",
+          "infl_equip": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "adv_disc_charges_all": {
+        "comment": "",
+        "fields": {
+          "action_id": "",
+          "service_disc_id": "",
+          "service_lf_id": "",
+          "value": "",
+          "adv_disc_charges_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "adv_disc_link_packet_all": {
+        "comment": "",
+        "fields": {
+          "adv_disc_link_packet_id": "",
+          "packet_id": "",
+          "action_id": "",
+          "adv_disc_charges_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "adv_discounts_all": {
+        "comment": "",
+        "fields": {
+          "action_id": "",
+          "disc_type_id": "from deserializer",
+          "dur_type_id": "from deserializer",
+          "duration": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "adv_teo_link_activate_lf_all": {
+        "comment": "",
+        "fields": {
+          "activity_id": "",
+          "teo_flags_pk_id": "from deserializer",
+          "action_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "agreement_flag_groups_all": {
+        "comment": "Справочник групп флагов на договоре",
+        "fields": {
+          "agreement_flag_group_id": "",
+          "agree_flag_group_type_id": "from deserializer",
+          "group_by_id": "from deserializer",
+          "group_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "agreement_flags_all": {
+        "comment": "Справочник флагов (свойств) на договоре",
+        "fields": {
+          "flag_id": "",
+          "flag_name": "from deserializer",
+          "flag_type_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "permit_to_close": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "agreement_types_all": {
+        "comment": "Справочник типов договоров",
+        "fields": {
+          "agreement_type_id": "",
+          "agreement_type_name": "from deserializer",
+          "pay_days": "from deserializer",
+          "company_id": "from deserializer",
+          "agr_pay_type_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "agr_cl_type_id": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "agreements_all": {
+        "comment": "Справочник  договоров",
+        "fields": {
+          "agreement_id": "",
+          "attr_entity_id": "from deserializer",
+          "client_id": "from deserializer",
+          "agreement_number": "from deserializer",
+          "agree_date": "from deserializer",
+          "description": "from deserializer",
+          "agreement_type_id": "from deserializer",
+          "contact_email": "from deserializer",
+          "pay_days": "from deserializer",
+          "old_agreement_number": "from deserializer",
+          "old_agree_date": "from deserializer",
+          "new_agreement_number": "from deserializer",
+          "new_agree_date": "from deserializer",
+          "manager_id": "from deserializer",
+          "connect_plan_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "c_data_all": {
+        "comment": "Таблица с константами биллинга",
+        "fields": {
+          "c_data_id": "",
+          "city_id": "from deserializer",
+          "c_obj_id": "from deserializer",
+          "c_data": "from deserializer",
+          "active_to": "from deserializer",
+          "active_from": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "cable_city_net_ip_pool_all": {
+        "comment": "Справочник пулов ip-адресов",
+        "fields": {
+          "pool_id": "",
+          "ip_start": "from deserializer",
+          "ip_stop": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "product_id": "from deserializer",
+          "pool_type_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "city_id": "from deserializer",
+          "company_id": "from deserializer"
+        }
+      },
+      "calls_all": {
+        "comment": "Звонки с астериска",
+        "fields": {
+          "rowid": "from deserializer",
+          "session_id": "from deserializer",
+          "zi_id": "from deserializer",
+          "opponent_number": "from deserializer",
+          "terminal_resource_id": "from deserializer",
+          "call_type_id": "from deserializer",
+          "call_raw_id": "from deserializer",
+          "duration_rounded": "from deserializer",
+          "duration": "from deserializer",
+          "time_stop": "from deserializer",
+          "data_source_id": "from deserializer",
+          "territory_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "campuses_all": {
+        "comment": "Справочник МКУ",
+        "fields": {
+          "campus_number": "",
+          "uhs_id": "from deserializer",
+          "campus_id": "from deserializer",
+          "site": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "cch_result_calc_all": {
+        "comment": "Изменение выручки B2B (Результат расчета выручки по логу изменений)",
+        "fields": {
+          "rowid": "from deserializer",
+          "result_calc_id": "from deserializer",
+          "date_change": "from deserializer",
+          "ch_log_owner": "from deserializer",
+          "user_id": "from deserializer",
+          "log_id": "from deserializer",
+          "addendum_id": "from deserializer",
+          "addendum2_id": "from deserializer",
+          "subdivision_id": "from deserializer",
+          "manager_id": "from deserializer",
+          "service_id": "from deserializer",
+          "old_value": "from deserializer",
+          "affect_date": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": "from deserializer",
+          "value": "from deserializer",
+          "info": "from deserializer",
+          "source_ch_id": "from deserializer"
+        }
+      },
+      "cch_sources_changes_all": {
+        "comment": "Словарь источников изменений в таблицах влияющих на выручку В2В",
+        "fields": {
+          "source_ch_id": "",
+          "name_source": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "name_source_main": "from deserializer"
+        }
+      },
+      "charge_link_bills_all": {
+        "comment": "",
+        "fields": {
+          "rowid": "from deserializer",
+          "charge_link_bills_id": "from deserializer",
+          "charge_id": "from deserializer",
+          "bill_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "charges_all": {
+        "comment": "Таблица начислений на приложениях договора(фактические начисления)",
+        "fields": {
+          "rowid": "from deserializer",
+          "charge_id": "from deserializer",
+          "timestamp": "from deserializer",
+          "value": "from deserializer",
+          "currency_id": "from deserializer",
+          "addendum_id": "from deserializer",
+          "service_id": "from deserializer",
+          "zone_id": "from deserializer",
+          "product_id": "from deserializer",
+          "value_w_nds": "from deserializer",
+          "rule_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": "from deserializer",
+          "discount_rule_id": "from deserializer",
+          "discount_coef": "from deserializer",
+          "balance_account_item_id": "from deserializer"
+        }
+      },
+      "charges_details_all": {
+        "comment": "Разнесения выручки В2В по филиалам",
+        "fields": {
+          "charge_id": "",
+          "value": "from deserializer",
+          "area_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "invoice_item_id": "from deserializer",
+          "det_charge_id": "from deserializer",
+          "company_id": "from deserializer"
+        }
+      },
+      "cities_all": {
+        "comment": "Справочник городов",
+        "fields": {
+          "city_id": "",
+          "city_name": "from deserializer",
+          "city_active": "from deserializer",
+          "project_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "city_servers": {
+        "comment": "Справочник наименований серверов в городах",
+        "fields": {
+          "city_id": "",
+          "city_name": "",
+          "schema_name": "",
+          "server_domain": "",
+          "web_domain": "",
+          "billing_domain": "",
+          "billing_id": "",
+          "city_tz": "",
+          "city_tz_ofs": "",
+          "parent_schema_ma": "",
+          "parent_city_ma": ""
+        }
+      },
+      "cl_clients_link_workers_all": {
+        "comment": "Ответственный менеджер клиента",
+        "fields": {
+          "clients_link_workers_id": "",
+          "client_id": "from deserializer",
+          "zp_worker_id": "from deserializer",
+          "type_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "client_agree_login": {
+        "comment": "Связь клиента, договора, приложения и логина",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "agreement_id": "ID договора в биллинге",
+          "addendum_id": "ID приложения в биллинге",
+          "login_name": "Логин или IP клиента (в символьном виде)",
+          "terminal_resource_id": "ID терминального ресурса (логина или IP)",
+          "agreement_number": "Номер договора",
+          "client_type_id": "1 - юр лицо, 2 - физ лицо",
+          "update_date": "Дата обновления данных",
+          "billing_id": "Индентификатор биллинга"
+        }
+      },
+      "client_agree_login_period": {
+        "comment": "Связь клиента, договора, приложения и логина (по периодам действия логина)",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "agreement_id": "ID договора в биллинге",
+          "addendum_id": "ID приложения в биллинге",
+          "login_name": "Логин или IP клиента (в символьном виде)",
+          "active_from": "Период действия логина: начало",
+          "active_to": "Период действия логина: завершение",
+          "terminal_resource_id": "ID терминального ресурса (логина или IP)",
+          "agreement_number": "Номер договора",
+          "client_type_id": "1 - юр лицо, 2 - физ лицо",
+          "update_date": "Дата обновления данных",
+          "billing_id": "Индентификатор биллинга"
+        }
+      },
+      "client_city_links_all": {
+        "comment": "Связь клиента и населенного пункта",
+        "fields": {
+          "client_id": "",
+          "city_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "client_houses": {
+        "comment": "",
+        "fields": {
+          "client_id": "ID клиента в биллинге",
+          "billing_id": "ID биллинга",
+          "unified_house_id": "Унифицированный ID дома",
+          "unified_street_id": "Унифицированный ID улицы",
+          "house_id": "ID дома в биллинге",
+          "street_id": "ID улицы в биллинге",
+          "area_id": "ID территории в биллинге"
+        }
+      },
+      "clients_all": {
+        "comment": "Справочник клиентов",
+        "fields": {
+          "client_id": "",
+          "attr_entity_id": "from deserializer",
+          "client_name": "from deserializer",
+          "property_form_id": "from deserializer",
+          "passport_address": "from deserializer",
+          "address_comment": "from deserializer",
+          "real_address": "from deserializer",
+          "contact_phone": "from deserializer",
+          "bik": "from deserializer",
+          "settlement_account": "from deserializer",
+          "correspondent_account": "from deserializer",
+          "bank_name": "from deserializer",
+          "reg_document": "from deserializer",
+          "director_name": "from deserializer",
+          "u_index": "from deserializer",
+          "u_house_id": "from deserializer",
+          "u_office": "from deserializer",
+          "f_index": "from deserializer",
+          "f_house_id": "from deserializer",
+          "f_office": "from deserializer",
+          "contact_fio": "from deserializer",
+          "contact_fax": "from deserializer",
+          "contact_email": "from deserializer",
+          "buh_fio": "from deserializer",
+          "buh_phone": "from deserializer",
+          "buh_fax": "from deserializer",
+          "buh_email": "from deserializer",
+          "vip_fio": "from deserializer",
+          "vip_post": "from deserializer",
+          "a_group": "from deserializer",
+          "commentary": "from deserializer",
+          "inn": "from deserializer",
+          "contact_post": "from deserializer",
+          "passport": "from deserializer",
+          "kpp": "from deserializer",
+          "okved": "from deserializer",
+          "client_type_id": "from deserializer",
+          "birthdate": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        },
+        "sample_hide": true
+      },
+      "const_dict_all": {
+        "comment": "Словарь констант ",
+        "fields": {
+          "const_dict_id": "",
+          "const_type_id": "from deserializer",
+          "const_alias": "from deserializer",
+          "const_val_n": "from deserializer",
+          "const_val_c": "from deserializer",
+          "const_val_d": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": "from deserializer"
+        }
+      },
+      "content_names_all": {
+        "comment": "",
+        "fields": {
+          "content_name_id": "",
+          "content_name": "",
+          "active_from": "",
+          "active_to": "",
+          "service_id": "",
+          "billing_id": "",
+          "sa_import_date": "",
+          "content_type_id": "",
+          "duration": "",
+          "product_id": ""
+        }
+      },
+      "content_subscribes_all": {
+        "comment": "",
+        "fields": {
+          "terminal_resource_id": "",
+          "content_name_id": "from deserializer",
+          "subscription_id": "from deserializer",
+          "last_try_activation": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": "from deserializer"
+        }
+      },
+      "d_channel_packet_links_all": {
+        "comment": "Связь каналов и пакетов каналов",
+        "fields": {
+          "link_id": "",
+          "packet_id": "from deserializer",
+          "channel_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "d_channels_all": {
+        "comment": "Справочник каналов",
+        "fields": {
+          "channel_id": "",
+          "channel_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "channel_hd": "from deserializer",
+          "genre_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "d_decoders_all": {
+        "comment": "Справочник декодеров",
+        "fields": {
+          "terminal_resource_id": "",
+          "place_id": "from deserializer",
+          "decoder_type_id": "from deserializer",
+          "decoder_number": "from deserializer",
+          "switch": "from deserializer",
+          "date_create": "from deserializer",
+          "verifier": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "pin": "from deserializer",
+          "nuid": "from deserializer",
+          "materials_ens_id": "from deserializer"
+        }
+      },
+      "dc_serv_plan_groups_all": {
+        "comment": "Привязка групп планов к услугам",
+        "fields": {
+          "dspg_id": "",
+          "ds_id": "from deserializer",
+          "plan_group_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "do_spesialist_all": {
+        "comment": "Ответственные менеджеры договора",
+        "fields": {
+          "do_spesialist_id": "",
+          "type_spesialist_id": "from deserializer",
+          "agreement_id": "from deserializer",
+          "zp_worker_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "domru_bonuses_all": {
+        "comment": "Справочник скоростных бонусов ",
+        "fields": {
+          "bonus_id": "",
+          "bonus_name": "from deserializer",
+          "description": "from deserializer",
+          "bonus_type_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "service_id": "from deserializer",
+          "days_duration": "from deserializer",
+          "speed": "from deserializer",
+          "speed_type_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "product_id": "from deserializer"
+        }
+      },
+      "dwh_charges_details_all": {
+        "comment": "Разнесения прогнозной выручки В2В по филиалам",
+        "fields": {
+          "rowid": "from deserializer",
+          "dwh_charge_id": "from deserializer",
+          "company_id": "from deserializer",
+          "value": "from deserializer",
+          "dep_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "invoice_item_id": "from deserializer",
+          "dwh_det_charge_id": "from deserializer",
+          "area_id": "from deserializer"
+        }
+      },
+      "eql_measures_all": {
+        "comment": "Замеры скорости",
+        "fields": {
+          "measure_id": "",
+          "terminal_resource_id": "from deserializer",
+          "time": "from deserializer",
+          "ip": "from deserializer",
+          "speed_upload": "from deserializer",
+          "speed_download": "from deserializer",
+          "user_agent": "from deserializer",
+          "measures_service": "from deserializer",
+          "ping_request": "from deserializer",
+          "sla_speed": "from deserializer",
+          "is_show": "from deserializer",
+          "speed_download_required": "from deserializer",
+          "speed_upload_required": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "equip_provis_agreement_all": {
+        "comment": "",
+        "fields": {
+          "provis_agre_id": "",
+          "agreement_id": "from deserializer",
+          "prov_equip_id": "from deserializer",
+          "terminal_resource_id": "from deserializer",
+          "firmware_version": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "serial_number": "from deserializer",
+          "last_polled": "from deserializer",
+          "cost_id": "from deserializer",
+          "house_link_id": "from deserializer",
+          "box_link_id": "from deserializer",
+          "equip_status_id": "from deserializer"
+        }
+      },
+      "equip_provision_model_all": {
+        "comment": "",
+        "fields": {
+          "prov_equip_id": "",
+          "prov_equip_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "executer_links_all": {
+        "comment": "Связка исполнителя и шага заявки",
+        "fields": {
+          "rowid": "from deserializer",
+          "executer_link_id": "from deserializer",
+          "state_step_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "request_state_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "request_this_active": "from deserializer",
+          "executer_id": "from deserializer"
+        }
+      },
+      "executers_all": {
+        "comment": "Исполнгители на заявках",
+        "fields": {
+          "executer_id": "",
+          "executer_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "subdivision_id": "from deserializer",
+          "tabnumber": "from deserializer",
+          "zp_worker_id": "from deserializer",
+          "agreement_number": "from deserializer",
+          "manager_id": "from deserializer",
+          "brigade_id": "from deserializer",
+          "city_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "exp_client_agree_login": {
+        "comment": "",
+        "fields": {
+          "client_id": "",
+          "billing_id": "",
+          "agreement_id": "",
+          "addendum_id": "",
+          "login_name": "",
+          "terminal_resource_id": "",
+          "agreement_number": "",
+          "client_type_id": ""
+        }
+      },
+      "expenses_all": {
+        "comment": "Затраты планируемые на подключение",
+        "fields": {
+          "expenses_id": "",
+          "teo_id": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "expenses_number": "from deserializer",
+          "expenses_unit_cost": "from deserializer",
+          "pay_kind": "from deserializer",
+          "contr_id": "from deserializer",
+          "canal_type_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "flag_link_groups_all": {
+        "comment": "Принадлежность флагов группам",
+        "fields": {
+          "flag_link_group_id": "",
+          "flag_id": "from deserializer",
+          "agreement_flag_group_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "flag_link_operations_all": {
+        "comment": "Связка операций и флагов договоров",
+        "fields": {
+          "link_operation_id": "",
+          "flag_id": "from deserializer",
+          "action_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "priority": "from deserializer",
+          "operation_id": "from deserializer",
+          "operation_type_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "flag_link_props_all": {
+        "comment": "Свойства флагов на договоре",
+        "fields": {
+          "flag_link_prop_id": "",
+          "flag_link_id": "from deserializer",
+          "flag_prop_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "value_int": "from deserializer",
+          "value_char": "from deserializer",
+          "value_date": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "sa_real_imp_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "flag_links_agreements_all": {
+        "comment": "",
+        "fields": {
+          "flag_links_agreements": "",
+          "flag_link_id": "from deserializer",
+          "agreements_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "flag_links_all": {
+        "comment": "Флаги на договоре",
+        "fields": {
+          "flag_id": "",
+          "agreement_id": "",
+          "flag_link_id": "",
+          "user_id": "",
+          "change_date": "",
+          "close_date": "",
+          "close_user_id": "",
+          "sa_import_date": "",
+          "sa_real_imp_date": "",
+          "billing_id": ""
+        }
+      },
+      "flag_operations_all": {
+        "comment": "Справочник операций с флагами",
+        "fields": {
+          "operation_id": "",
+          "operation_name": "from deserializer",
+          "operation_proc": "from deserializer",
+          "oper_mess": "from deserializer",
+          "operation_param": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "operation_description": "from deserializer"
+        }
+      },
+      "flag_props_all": {
+        "comment": "Справочник свойст флагов",
+        "fields": {
+          "flag_prop_id": "",
+          "prop_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "flag_types_all": {
+        "comment": "Справочник типов флагов",
+        "fields": {
+          "flag_type_id": "",
+          "flag_type_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_apartment_attrs_all": {
+        "comment": "Атрибуты на квартирах",
+        "fields": {
+          "attr_id": "",
+          "apartment_id": "from deserializer",
+          "attr_type_id": "from deserializer",
+          "value_number": "from deserializer",
+          "value_char": "from deserializer",
+          "value_date": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_apartments_all": {
+        "comment": "Справочник квартир",
+        "fields": {
+          "apartment_id": "",
+          "apartment_number": "from deserializer",
+          "porche_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_area_attrs_all": {
+        "comment": "Атрибуты населенных пунктов",
+        "fields": {
+          "attr_id": "",
+          "type_id": "from deserializer",
+          "area_id": "from deserializer",
+          "value_number": "from deserializer",
+          "value_char": "from deserializer",
+          "value_date": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_areas_all": {
+        "comment": "Населенные пункты",
+        "fields": {
+          "area_id": "",
+          "area_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_attr_link_campuse_all": {
+        "comment": "Атрибуты МКУ",
+        "fields": {
+          "geo_attr_link_campuse_id": "",
+          "geo_attributes_type_id": "from deserializer",
+          "campus_id": "from deserializer",
+          "value_number": "from deserializer",
+          "value_char": "from deserializer",
+          "value_date": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_houses_all": {
+        "comment": "Дома",
+        "fields": {
+          "house_id": "",
+          "street_id": "from deserializer",
+          "house_number": "from deserializer",
+          "building_number": "from deserializer",
+          "floor_count": "from deserializer",
+          "apartment_count": "from deserializer",
+          "elevator": "from deserializer",
+          "porche_count": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "service_org": "from deserializer",
+          "description": "from deserializer",
+          "campus_id": "from deserializer",
+          "microdistrict_id": "from deserializer",
+          "link_house_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "unified_house_id": "from deserializer",
+          "unified_street_id": "from deserializer"
+        }
+      },
+      "geo_houses_all_556": {
+        "comment": "Питерские дома",
+        "fields": {
+          "house_id": "",
+          "street_id": "from deserializer",
+          "house_number": "from deserializer",
+          "building_number": "from deserializer",
+          "floor_count": "from deserializer",
+          "apartment_count": "from deserializer",
+          "elevator": "from deserializer",
+          "porche_count": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "service_org": "from deserializer",
+          "description": "from deserializer",
+          "campus_id": "from deserializer",
+          "microdistrict_id": "from deserializer",
+          "link_house_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "unified_house_id": "from deserializer",
+          "unified_street_id": "from deserializer"
+        }
+      },
+      "geo_houses_link_campuses_all": {
+        "comment": "Привязка домов к МКУ",
+        "fields": {
+          "houses_link_campus_id": "",
+          "house_id": "from deserializer",
+          "campus_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "priority": "from deserializer",
+          "unified_house_id": "from deserializer",
+          "segment": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_microdistricts_all": {
+        "comment": "Справочник микрорайонов",
+        "fields": {
+          "microdistrict_id": "",
+          "microdistrict_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_mounted_capacity_all": {
+        "comment": "МЕ ( монтированная емкость) в разрезе услуг на доме",
+        "fields": {
+          "capacity_id": "",
+          "house_id": "from deserializer",
+          "campus_id": "from deserializer",
+          "capacity_value": "from deserializer",
+          "date_from": "from deserializer",
+          "date_to": "from deserializer",
+          "date_tv": "from deserializer",
+          "date_int": "from deserializer",
+          "check_date": "from deserializer",
+          "modify_date": "from deserializer",
+          "company_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_points_all": {
+        "comment": "Координаты домов",
+        "fields": {
+          "house_id": "",
+          "latitude": "from deserializer",
+          "longitude": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "unified_house_id": "from deserializer"
+        }
+      },
+      "geo_sectors_activity_all": {
+        "comment": "Активность участков сети в городах",
+        "fields": {
+          "site_active_id": "",
+          "site_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "comments": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "geo_streets_all": {
+        "comment": "Улицы",
+        "fields": {
+          "street_id": "",
+          "street_name": "from deserializer",
+          "area_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "unified_street_id": "from deserializer"
+        }
+      },
+      "gs_service_additional_all": {
+        "comment": "Сотфоны",
+        "fields": {
+          "service_addit__id": "",
+          "service_addit_name_id": "from deserializer",
+          "terminal_resource_id": "from deserializer",
+          "service_addit_status": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "service_addit_status_str": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "house_material_costs_all": {
+        "comment": "Материальные затраты на подключение дома",
+        "fields": {
+          "rowid": "from deserializer",
+          "cost_id": "from deserializer",
+          "teo_id": "from deserializer",
+          "close_date": "from deserializer",
+          "house_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "count_materials": "from deserializer",
+          "insert_date": "from deserializer",
+          "addendum_id": "from deserializer",
+          "invoice_number": "from deserializer",
+          "billing_id": "from deserializer",
+          "series_id": "from deserializer",
+          "attr_entity_id": "from deserializer"
+        }
+      },
+      "inf_addenda": {
+        "comment": "",
+        "fields": {
+          "addendum_id": "",
+          "agreement_id": "",
+          "billing_id": ""
+        }
+      },
+      "inf_addendum_resources": {
+        "comment": "",
+        "fields": {
+          "resource_id": "",
+          "addendum_id": "",
+          "billing_id": ""
+        }
+      },
+      "inf_agreement_types": {
+        "comment": "",
+        "fields": {
+          "agreement_type_id": "",
+          "agr_cl_type_id": "",
+          "billing_id": ""
+        }
+      },
+      "inf_agreements": {
+        "comment": "",
+        "fields": {
+          "agreement_id": "",
+          "agreement_number": "",
+          "client_id": "",
+          "agreement_type_id": "",
+          "billing_id": ""
+        }
+      },
+      "inf_city_servers": {
+        "comment": "",
+        "fields": {
+          "city_id": "from deserializer",
+          "city_name": "from deserializer",
+          "schema_name": "from deserializer",
+          "server_domain": "from deserializer",
+          "web_domain": "from deserializer",
+          "billing_domain": "from deserializer",
+          "billing_id": "from deserializer",
+          "city_tz": "from deserializer",
+          "city_tz_ofs": "from deserializer",
+          "parent_schema_ma": "from deserializer",
+          "parent_city_ma": "from deserializer"
+        }
+      },
+      "inf_client_agree_login": {
+        "comment": "",
+        "fields": {
+          "client_id": "",
+          "billing_id": "",
+          "agreement_id": "",
+          "addendum_id": "",
+          "login_name": "",
+          "terminal_resource_id": "",
+          "agreement_number": "",
+          "client_type_id": ""
+        }
+      },
+      "inf_client_houses": {
+        "comment": "",
+        "fields": {
+          "client_id": "",
+          "billing_id": "",
+          "unified_house_id": "",
+          "unified_street_id": "",
+          "house_id": "",
+          "street_id": "",
+          "area_id": ""
+        }
+      },
+      "inf_ip_for_dedicated_clients": {
+        "comment": "",
+        "fields": {
+          "terminal_resource_id": "",
+          "ip": "",
+          "billing_id": ""
+        }
+      },
+      "inf_logins": {
+        "comment": "",
+        "fields": {
+          "terminal_resource_id": "",
+          "login_name": "",
+          "billing_id": ""
+        }
+      },
+      "inf_resource_contents": {
+        "comment": "",
+        "fields": {
+          "resource_id": "",
+          "terminal_resource_id": "",
+          "billing_id": ""
+        }
+      },
+      "ip_for_dedicated_clients_all": {
+        "comment": "IP адреса на клиентах",
+        "fields": {
+          "ip_dedicated_client_id": "",
+          "terminal_resource_id": "from deserializer",
+          "ip": "from deserializer",
+          "owner_name": "from deserializer",
+          "ip_mac_address": "from deserializer",
+          "host_name": "from deserializer",
+          "has_mac": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "logins_all": {
+        "comment": "Логины  клиентов",
+        "fields": {
+          "terminal_resource_id": "",
+          "login_name": "from deserializer",
+          "login_password": "from deserializer",
+          "callback_phone": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        },
+        "sample_hide": true
+      },
+      "manager_user_links_all": {
+        "comment": "Связка сущностей \"менеджер\" и \"пользователь АРМ\"",
+        "fields": {
+          "manager_id": "",
+          "user_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "managers_all": {
+        "comment": "Справочник менеджеров",
+        "fields": {
+          "manager_id": "",
+          "manager_name": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "subdivision_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "tabnumber": "from deserializer",
+          "zp_worker_id": "from deserializer",
+          "agreement_number": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "material_costs_all": {
+        "comment": "Материальные затраты на подключение клиента",
+        "fields": {
+          "cost_id": "",
+          "attr_entity_id": "from deserializer",
+          "count_materials": "from deserializer",
+          "insert_date": "from deserializer",
+          "addendum_id": "from deserializer",
+          "invoice_number": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "teo_id": "from deserializer"
+        }
+      },
+      "material_costs_transfer_all": {
+        "comment": "Перенос затрат с приложения на приложение",
+        "fields": {
+          "transfer_id": "",
+          "cost_id": "from deserializer",
+          "addendum_id": "from deserializer",
+          "addendum_link_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "materials_all": {
+        "comment": "Справочник матриалов",
+        "fields": {
+          "attr_entity_id": "",
+          "unit_id": "from deserializer",
+          "material_name": "from deserializer",
+          "material_types_id": "from deserializer",
+          "unitized_code": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "materials_ens_all": {
+        "comment": "Справочник материалов ЕНС",
+        "fields": {
+          "materials_ens_id": "",
+          "materials_ens_name": "from deserializer",
+          "unitized_code": "from deserializer",
+          "unit_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "materials_ens_links_all": {
+        "comment": "Связка материалов ЕНС с типами материалов",
+        "fields": {
+          "materials_ens_links_id": "",
+          "materials_ens_type_id": "from deserializer",
+          "materials_ens_id": "from deserializer",
+          "date_from": "from deserializer",
+          "date_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "materials_ens_type_all": {
+        "comment": "Справочник типов материалов ЕНС",
+        "fields": {
+          "materials_ens_type_id": "",
+          "materials_ens_type_name": "from deserializer",
+          "klass_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "measurement_units_all": {
+        "comment": "Справочник единиц измерений",
+        "fields": {
+          "unit_id": "",
+          "unit_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "rf_code": "from deserializer"
+        }
+      },
+      "minutes_pack_addenda_all": {
+        "comment": "Привязка \"пакетов минут\" к приложениям",
+        "fields": {
+          "minutes_pack_addenda_id": "",
+          "addendum_id": "from deserializer",
+          "pack_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "manager_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "mrk_calls_all": {
+        "comment": "Звонки Cisco и звонки из Outbound(которые отправляются в Универсальную Очередь)",
+        "fields": {
+          "rowid": "from deserializer",
+          "mrk_call_id": "from deserializer",
+          "system_id": "from deserializer",
+          "time_start": "from deserializer",
+          "time_stop": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "client_phone": "from deserializer",
+          "client_id": "from deserializer",
+          "queue_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "call_code": "from deserializer",
+          "operator_id": "from deserializer"
+        },
+        "sample_hide": true
+      },
+      "notice_types_all": {
+        "comment": "",
+        "fields": {
+          "notice_type_id": "",
+          "notice_type_name": "",
+          "n_aim_id": "",
+          "n_means_id": "",
+          "auto": "",
+          "sa_import_date": "",
+          "is_cm": "",
+          "date_start": "",
+          "proc_id": "",
+          "date_end": "",
+          "billing_id": ""
+        }
+      },
+      "other_companies_network_all": {
+        "comment": "Справочник сетей приобретенных активов",
+        "fields": {
+          "company_id": "",
+          "company_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "city_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "companies_id": "from deserializer",
+          "u_city_id": "from deserializer"
+        }
+      },
+      "packet_lines_all": {
+        "comment": "Пакеты каналов на терминальном ресурсе",
+        "fields": {
+          "packet_id": "",
+          "terminal_resource_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "phones_all": {
+        "comment": "",
+        "fields": {
+          "terminal_resource_id": "",
+          "phone_number": "",
+          "phone_number_set_id": "",
+          "phone_type_id": "",
+          "phone_state_id": "",
+          "show_in_directory": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        },
+        "sample_hide": true
+      },
+      "plan_contents_all": {
+        "comment": "Призязка тариных планов с услугами( смотреть вместе с таблицей plan_items_all)",
+        "fields": {
+          "plan_item_id": "",
+          "plan_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "plan_groups_all": {
+        "comment": "Спарвочник групп планов",
+        "fields": {
+          "plan_group_id": "",
+          "plan_group_name": "from deserializer",
+          "product_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "plan_items_all": {
+        "comment": "Призязка тариных планов с услугами( смотреть вместе с таблицей plan_contents_all)",
+        "fields": {
+          "plan_item_id": "",
+          "service_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "plan_properties_all": {
+        "comment": "Свойства конкретного тарифного плана",
+        "fields": {
+          "property_id": "",
+          "property_type_id": "",
+          "active_from": "",
+          "active_to": "",
+          "plan_id": "",
+          "prop_value": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "plans_all": {
+        "comment": "Справочник тарифных планов",
+        "fields": {
+          "plan_id": "",
+          "plan_name": "from deserializer",
+          "plan_group_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "company_id": "from deserializer"
+        }
+      },
+      "point_plugins_all": {
+        "comment": "Справочник точек доступа",
+        "fields": {
+          "point_plugin_id": "",
+          "agreement_id": "from deserializer",
+          "house_id": "from deserializer",
+          "phones": "from deserializer",
+          "pins": "from deserializer",
+          "logins": "from deserializer",
+          "ips": "from deserializer",
+          "hardware": "from deserializer",
+          "contact_face": "from deserializer",
+          "contact_phone": "from deserializer",
+          "contact_email": "from deserializer",
+          "description": "from deserializer",
+          "office": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "porches_all": {
+        "comment": "Справочник подъездов",
+        "fields": {
+          "porche_id": "",
+          "house_id": "from deserializer",
+          "porche_num": "from deserializer",
+          "link_from_other_porch": "from deserializer",
+          "electro_id": "from deserializer",
+          "optical_id": "from deserializer",
+          "media_id": "from deserializer",
+          "door_code": "from deserializer",
+          "description": "from deserializer",
+          "media_serial_number": "from deserializer",
+          "connected": "from deserializer",
+          "count_offices": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "pppoe_last_sessions_all": {
+        "comment": "Таблица с датами последних сессий на договорах",
+        "fields": {
+          "rowid": "from deserializer",
+          "session_id": "from deserializer",
+          "addendum_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": "from deserializer",
+          "last_date_session": "from deserializer",
+          "agreement_id": "from deserializer"
+        }
+      },
+      "pppoe_sessions_all": {
+        "comment": "Таблица сессий",
+        "fields": {
+          "rowid": "from deserializer",
+          "session_id": "from deserializer",
+          "terminal_resource_id": "from deserializer",
+          "data_source_id": "from deserializer",
+          "ip": "from deserializer",
+          "time_stop": "from deserializer",
+          "duration": "from deserializer",
+          "mac_address": "from deserializer",
+          "physical_access_unit": "from deserializer",
+          "check_sum": "from deserializer",
+          "duration_rounded": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "pr_business_proc_steps_all": {
+        "comment": "Справочник шагов бизнесс-процессов",
+        "fields": {
+          "step_id": "",
+          "proc_id": "",
+          "def_group_id": "",
+          "step_name": "",
+          "step_number": "",
+          "send_email": "",
+          "active_from": "",
+          "active_to": "",
+          "classification_step": "",
+          "infinity_step": "",
+          "critical_duration": "",
+          "last": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "pr_object_problem_links_all": {
+        "comment": "Связка проблем обращений с классами обращений",
+        "fields": {
+          "object_problem_link_id": "",
+          "proc_problem_link_id": "from deserializer",
+          "object_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "pr_proc_request_state_all": {
+        "comment": "Шаги заявок",
+        "fields": {
+          "rowid": "",
+          "request_state_id": "",
+          "step_id": "from deserializer",
+          "remind_boss_after": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "executer_id": "from deserializer",
+          "se_user_id": "from deserializer",
+          "info": "from deserializer",
+          "request_id": "from deserializer",
+          "group_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "pr_proc_requests_all": {
+        "comment": "Заявки ",
+        "fields": {
+          "rowid": "from deserializer",
+          "request_id": "from deserializer",
+          "plan_request_execute": "from deserializer",
+          "quality": "from deserializer",
+          "plan_request_stop": "from deserializer",
+          "request_stop": "from deserializer",
+          "request_start": "from deserializer",
+          "owner": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "proc_id": "from deserializer",
+          "brigade_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": "from deserializer",
+          "office_comment": "from deserializer",
+          "office": "from deserializer",
+          "this_active": "from deserializer",
+          "parent_request_id": "from deserializer",
+          "last_step_id": "from deserializer",
+          "house_id": "from deserializer",
+          "problem_class_id": "from deserializer"
+        }
+      },
+      "pr_request_add_attr_all": {
+        "comment": "Атрибуты заявок",
+        "fields": {
+          "rowid": "from deserializer",
+          "add_attr_id": "from deserializer",
+          "add_attr_type_id": "from deserializer",
+          "request_id": "from deserializer",
+          "n_val": "from deserializer",
+          "val_str": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "pr_request_link_teo_all": {
+        "comment": "Связка заявок с ТЭО",
+        "fields": {
+          "pr_request_link_teo_id": "",
+          "request_id": "from deserializer",
+          "teo_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "problem_classes_all": {
+        "comment": "Справочник подклассов обращений ",
+        "fields": {
+          "problem_class_id": "",
+          "proc_id": "from deserializer",
+          "problem_class_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "class_id": "from deserializer",
+          "parent_pr_class_id": "from deserializer"
+        }
+      },
+      "products_all": {
+        "comment": "Справочник продуктов",
+        "fields": {
+          "product_id": "",
+          "product_name": "from deserializer",
+          "product_class_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "qs_answers_all": {
+        "comment": "Справочник ответов по анкетированию",
+        "fields": {
+          "answer_id": "",
+          "answer_text": "from deserializer",
+          "question_id": "from deserializer",
+          "check_another": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "ordering": "from deserializer",
+          "comments": "from deserializer"
+        }
+      },
+      "qs_qst_expl_params_all": {
+        "comment": "",
+        "fields": {
+          "qstnry_example_id": "",
+          "question_id": "",
+          "css": "",
+          "count_num": "",
+          "count_percent": "",
+          "count_people": "",
+          "sa_import_date": "",
+          "billing_id": ""
+        }
+      },
+      "qs_questionary_all": {
+        "comment": "Справочник типов анкетирования",
+        "fields": {
+          "questionary_id": "",
+          "questionary_name": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "notice_type_id": "from deserializer"
+        }
+      },
+      "qs_questionary_examples_all": {
+        "comment": "",
+        "fields": {
+          "qstnry_example_id": "",
+          "example_name": "",
+          "questionary_id": "",
+          "active_from": "",
+          "active_to": "",
+          "comments": "",
+          "sa_import_date": "",
+          "check_template": "",
+          "billing_id": ""
+        }
+      },
+      "qs_req_asnwer_links_all": {
+        "comment": "Связка заявки с ответом по анкетированию",
+        "fields": {
+          "rowid": "",
+          "req_asnw_link_id": "",
+          "answer_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "time_stamp": "from deserializer",
+          "request_id": "from deserializer",
+          "answer_text": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "qs_samples_all": {
+        "comment": "Справочник экземпляров анкеты",
+        "fields": {
+          "sample_id": "",
+          "qstnry_example_id": "from deserializer",
+          "comments": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "qs_smpl_request_links_all": {
+        "comment": "Связка экземпляров анкеты с заявкой на анкетирование",
+        "fields": {
+          "request_id": "",
+          "sample_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "resource_contents_all": {
+        "comment": "Связка приложений и терминальных ресурсов (смотреть только в связке с таблицей raddendum_resources_all)",
+        "fields": {
+          "resource_id": "",
+          "terminal_resource_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "res_cont_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "ri_license_fee_ps_all": {
+        "comment": "",
+        "fields": {
+          "rule_id": "",
+          "period_id": "from deserializer",
+          "price": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "ri_packets_ps_contents_all": {
+        "comment": "",
+        "fields": {
+          "packet_content_id": "",
+          "packet_id": "from deserializer",
+          "rule_id": "from deserializer",
+          "price": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "ri_ulf_ps_contents_all": {
+        "comment": "",
+        "fields": {
+          "ulf_content_id": "",
+          "rule_id": "from deserializer",
+          "threshold": "from deserializer",
+          "fixed_sum": "from deserializer",
+          "price": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "rules_all": {
+        "comment": "Справочник правил начислений ",
+        "fields": {
+          "rowid": "from deserializer",
+          "rule_id": "from deserializer",
+          "rule_impl_id": "from deserializer",
+          "operation_type_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "sa_aa_b2c_alf_with_periods": {
+        "comment": "Активные договоры в2с с датами активности ",
+        "fields": {
+          "active_id": "",
+          "agreement_id": "from deserializer",
+          "product_id": "from deserializer",
+          "client_id": "from deserializer",
+          "f_house_id": "from deserializer",
+          "f_office": "from deserializer",
+          "date_from": "from deserializer",
+          "date_to": "from deserializer",
+          "plan_id": "from deserializer",
+          "project_id": "from deserializer",
+          "d_type_client_sim": "from deserializer",
+          "pay_scheme_type_id": "from deserializer",
+          "billing_id": ""
+        }
+      },
+      "service_flag_links_all": {
+        "comment": "Привязка услуг к флагам договоров",
+        "fields": {
+          "service_flag_link_id": "",
+          "service_id": "from deserializer",
+          "service_flag_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer"
+        }
+      },
+      "service_group_inclusive_all": {
+        "comment": "Наполнение групп сервиса сервисами ",
+        "fields": {
+          "service_group_id": "",
+          "service_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "services_all": {
+        "comment": "Справочник всех услуг",
+        "fields": {
+          "service_id": "",
+          "service_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "service_code": "from deserializer"
+        }
+      },
+      "simple_plan_items_all": {
+        "comment": "Привязка правил тарификации к услугам на тарифных планах",
+        "fields": {
+          "plan_item_id": "",
+          "zone_id": "from deserializer",
+          "rule_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "so_offer_contents_all": {
+        "comment": "Справочник VAS",
+        "fields": {
+          "soc_id": "",
+          "so_id": "from deserializer",
+          "type_id": "from deserializer",
+          "content_id": "from deserializer",
+          "basic": "from deserializer",
+          "soc_alias": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "so_special_offers_all": {
+        "comment": "Справочник спец предложений",
+        "fields": {
+          "so_id": "",
+          "offer_alias": "from deserializer",
+          "duration": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "min_dur": "from deserializer",
+          "notice_type_id": "from deserializer",
+          "consider_used_dur": "from deserializer",
+          "bundle_type_id": "from deserializer",
+          "duration_type_id": "from deserializer",
+          "show_autorenew": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "type_connect": "from deserializer"
+        }
+      },
+      "sub_service_links_all": {
+        "comment": "Связь основного сервиса с дополнительным, с указанием типа сервиса",
+        "fields": {
+          "service_link_id": "",
+          "lf_service_id": "from deserializer",
+          "sub_service_id": "from deserializer",
+          "service_type_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer"
+        }
+      },
+      "subdivisions_all": {
+        "comment": "Справочник подразделений менеджеров",
+        "fields": {
+          "subdivision_id": "",
+          "subdivision_name": "from deserializer",
+          "subdivision_class_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "subscriber_lines_all": {
+        "comment": "Линии КТВ",
+        "fields": {
+          "terminal_resource_id": "",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "teo_acts_all": {
+        "comment": "Акты на ТЭО",
+        "fields": {
+          "act_id": "",
+          "realdate": "from deserializer",
+          "teo_id": "from deserializer",
+          "act_type_id": "from deserializer",
+          "se_user_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "teo_all": {
+        "comment": "Справочник ТЭО",
+        "fields": {
+          "teo_id": "",
+          "plan_id": "from deserializer",
+          "current_needs": "from deserializer",
+          "connect_scheme": "from deserializer",
+          "expenses_remark": "from deserializer",
+          "remark": "from deserializer",
+          "special_conditions": "from deserializer",
+          "asm_capacity_phone": "from deserializer",
+          "poss_expansion_phone": "from deserializer",
+          "kind_connection_phone": "from deserializer",
+          "license_fee_phone": "from deserializer",
+          "asm_capacity_stream": "from deserializer",
+          "poss_expansion_stream": "from deserializer",
+          "license_fee_stream": "from deserializer",
+          "month_traf_vol_int": "from deserializer",
+          "min_speed_int": "from deserializer",
+          "number_ip_int": "from deserializer",
+          "number_point_plagins_int": "from deserializer",
+          "traffic_discount": "from deserializer",
+          "license_fee_int": "from deserializer",
+          "commercial_employ_date": "from deserializer",
+          "commercial_manager_date": "from deserializer",
+          "technical_employ_date": "from deserializer",
+          "technical_manager_date": "from deserializer",
+          "general_director_date": "from deserializer",
+          "name_number": "from deserializer",
+          "addr": "from deserializer",
+          "contact_fio": "from deserializer",
+          "month_traf_vol_phone": "from deserializer",
+          "wish_tariff": "from deserializer",
+          "attr_entity_id": "from deserializer",
+          "ncommercial_employ": "from deserializer",
+          "ncommercial_manager": "from deserializer",
+          "ntechnical_employ": "from deserializer",
+          "ntechnical_manager": "from deserializer",
+          "ngeneral_director": "from deserializer",
+          "point_plugin_id": "from deserializer",
+          "serial_phone": "from deserializer",
+          "commercial_manager_del": "from deserializer",
+          "hosting_domain": "from deserializer",
+          "hosting_plan_id": "from deserializer",
+          "hosting_ip_type": "from deserializer",
+          "product_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "teo_flag_links_all": {
+        "comment": "Привязка флагов на ТЭО",
+        "fields": {
+          "teo_flags_pk_id": "",
+          "flag_id": "from deserializer",
+          "teo_id": "from deserializer",
+          "flag_comment": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "open_user_id": "from deserializer",
+          "close_user_id": "from deserializer"
+        }
+      },
+      "teo_link_addenda_all": {
+        "comment": "Привязка ТЭО к приложению",
+        "fields": {
+          "tla_id": "",
+          "teo_id": "from deserializer",
+          "addendum_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "teo_terminal_resources_all": {
+        "comment": "Терминальные ресурсы на ТЭО",
+        "fields": {
+          "teo_terminal_resources_id": "",
+          "teo_id": "from deserializer",
+          "terminal_resource_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "activity_id": "from deserializer",
+          "teo_id1": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "tmp_logins_all": {
+        "comment": "",
+        "fields": {
+          "row_id": "",
+          "terminal_resource_id": "",
+          "login_name": "",
+          "login_password": "",
+          "callback_phone": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "tv_packet_names_all": {
+        "comment": "Справочник пакетов каналов",
+        "fields": {
+          "packet_id": "",
+          "packet_name": "from deserializer",
+          "sas_product_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "is_base": "from deserializer",
+          "service_id": "from deserializer",
+          "packet_type_id": "from deserializer"
+        }
+      },
+      "tv_packet_price_all": {
+        "comment": "Стоимость пакетов каналов",
+        "fields": {
+          "price_id": "",
+          "packet_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "price": "from deserializer",
+          "type_id": "from deserializer",
+          "city_id": "from deserializer",
+          "rule_id": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "uhs_all": {
+        "comment": "Справочник ПГСов",
+        "fields": {
+          "uhs_id": "",
+          "uhs_name": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "geo_attr_type_id": "from deserializer",
+          "comments": "from deserializer"
+        }
+      },
+      "xml_users_all": {
+        "comment": "Справочник пользователей АРМа",
+        "fields": {
+          "se_user_id": "",
+          "user_name": "from deserializer",
+          "user_login": "from deserializer",
+          "user_password": "from deserializer",
+          "user_email": "from deserializer",
+          "pager_email": "from deserializer",
+          "sms_email": "from deserializer",
+          "adm_permission": "from deserializer",
+          "type_id": "from deserializer",
+          "info": "from deserializer",
+          "city_id": "from deserializer",
+          "sa_import_date": "from deserializer",
+          "guid_1c": "from deserializer",
+          "billing_id": ""
+        },
+        "sample_hide": true
+      },
+      "zp_plans_all": {
+        "comment": "Справочник планов расчета зарпат",
+        "fields": {
+          "zp_plan_id": "",
+          "zp_plan_name": "from deserializer",
+          "group_on_print_for_rules": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "zp_workers_zp_plans_all": {
+        "comment": "Планы расчета ЗП у менеджеров",
+        "fields": {
+          "zp_wp_id": "",
+          "zp_worker_id": "from deserializer",
+          "zp_plan_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "zp_zp_worker_history_all": {
+        "comment": "Подчиненные менеджеры",
+        "fields": {
+          "zp_zp_worker_history_id": "",
+          "zp_worker_id": "from deserializer",
+          "zp_zp_worker_id": "from deserializer",
+          "active_from": "from deserializer",
+          "active_to": "from deserializer",
+          "billing_id": "from deserializer",
+          "sa_import_date": "from deserializer"
+        }
+      },
+      "minutes_pack_all": {
+        "comment": "",
+        "fields": {
+          "pack_id": "",
+          "pack_name": "",
+          "abon_pay": "",
+          "active_from": "",
+          "active_to": "",
+          "zone_pack": "",
+          "billing_id": "",
+          "sa_import_date": "",
+          "client_name": ""
+        }
+      },
+      "pr_business_procs_all": {
+        "comment": "",
+        "fields": {
+          "proc_id": "",
+          "proc_name": "",
+          "critical_duration": "",
+          "hard": "",
+          "only_work_days": "",
+          "locked": "",
+          "billing_id": "",
+          "sa_import_date": "",
+          "short_name": ""
+        }
+      },
+      "addendum_link_reissue_all": {
+        "comment": "",
+        "fields": {
+          "adl_reissue_id": "",
+          "adl_reissue_type_id": "",
+          "src_addendum_id": "",
+          "dest_addendum_id": "",
+          "real_date": "",
+          "change_date": "",
+          "se_user_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "product_link_product_type_all": {
+        "comment": "",
+        "fields": {
+          "product_link_product_type_id": "",
+          "product_type_id": "",
+          "product_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "house_material_costs_rent_all": {
+        "comment": "",
+        "fields": {
+          "cost_id": "",
+          "active_from": "",
+          "active_to": "",
+          "billing_id": "",
+          "sa_import_date": "",
+          "close_invoice_number": ""
+        }
+      },
+      "material_costs_link_types_all": {
+        "comment": "",
+        "fields": {
+          "cost_id": "",
+          "house_material_cost_type_id": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "payments_all": {
+        "comment": "",
+        "fields": {
+          "payment_id": "",
+          "timestamp": "",
+          "value": "",
+          "currency_id": "",
+          "agreement_id": "",
+          "payment_type_id": "",
+          "balance_account_item_id": "",
+          "payments_source_dict_id": "",
+          "cashdate": "",
+          "real_timestamp": "",
+          "billing_id": "",
+          "sa_import_date": ""
+        }
+      },
+      "sa_aa_b2c_with_periods": {
+        "comment": "",
+        "fields": {
+          "active_id": "",
+          "agreement_id": "",
+          "product_id": "",
+          "billing_id": "",
+          "client_id": "",
+          "f_house_id": "",
+          "f_office": "",
+          "date_from": "",
+          "date_to": "",
+          "plan_id": "",
+          "connect_technology_id": ""
+        }
+      },
+      "activate_lf_link_bonus_all": {
+        "comment": "Таблица для связки услуги на приложении и справочника с бонусами",
+        "fields": {
+          "activity_id": "Id записи услуги на приложении, с этим id приходим из таблицы activate_license_fee_all",
+          "billing_id": "Id биллинга",
+          "bonus_id": "id бонуса для связи с domru_bonuses_all",
+          "addendum_id": "Id приложения",
+          "active_from": "Дата активен с",
+          "active_to": "Дата активен по",
+          "traf_bonus": "",
+          "sa_import_date": "Дата заливки на sa"
+        }
+      }
+    }
+  }
+}

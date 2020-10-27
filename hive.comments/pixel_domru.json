@@ -1,0 +1,66 @@
+{
+  "pixel_domru": {
+    "description":"Данные посещений сайта dom.ru и ЛК [pixel_domru|https://kb.ertelecom.ru/pages/viewpage.action?pageId=278823298]",
+    "tables": {
+      "pagetracking": {
+        "comment": "Data from lk and domru.ru site",
+        "fields": {
+          "datehourminute": "Timestamp of event",
+          "client_id": "Client Id",
+          "javaenabled": "Java enabled or not",
+          "flashversion": "Version of flash",
+          "language": "OS language",
+          "screencolors": "screen colors",
+          "screenresolution": "screen resolution",
+          "windowresolution": "window resolution (for mobile devices)",
+          "codepage": "codepage of document",
+          "ua": "user agent",
+          "ip": "user ip",
+          "url": "url of our page",
+          "hostname": "hostname",
+          "pathtopage": "path to the page",
+          "screenview": "name of the screen for mobile devices",
+          "title": "title of the page",
+          "web_id": "id of web resource",
+          "user_id": "user id if no client id",
+          "ref": "document referrer",
+          "hit_type": "the type of hit",
+          "pageloadtime": "page load time",
+          "pagedownloadtime": "page download time",
+          "redirectresponcetime": "redirect responce time",
+          "serverresponcetime": "server responce time",
+          "contentloadtime": "content load time",
+          "event_category": "event category",
+          "event_action": "event action",
+          "event_label": "event label",
+          "event_value": "event value",
+          "puid": "domru cookie",
+          "http_ref": "HTTP referer",
+          "gtm": "google tag manager ID (id of container)",
+          "citydomain": "cookie citydomain on site domru.ru",
+          "browser_name": "browser name",
+          "browser_version": "browser version",
+          "os_name": "OS name",
+          "os_version": "OS version",
+          "device": "device class",
+          "conn_req_fio": "DEPRECATED ФИО клиента, оставившего заявку на подключение на сайте",
+          "conn_req_phone": "DEPRECATED Телефон клиента, оставившего заявку на подключение на сайте",
+          "year": "Year",
+          "month": "Month"
+        }
+      },
+      "pagetracking_failed": {
+        "comment": "Failed packets for domru.ru lk",
+        "fields": {
+          "key": "Tecnical info",
+          "value": "Tecnical info",
+          "topic": "Tecnical info",
+          "partition": "Tecnical info",
+          "offset": "Tecnical info",
+          "timestamp": "Tecnical info",
+          "timestamptype": "Tecnical info"
+        }
+      }
+    }
+  }
+}

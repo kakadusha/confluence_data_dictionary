@@ -1,0 +1,97 @@
+{
+    "tv_devices_log": {
+        "description":"Обработка данных [телесмотрения|https://kb.ertelecom.ru/pages/viewpage.action?pageId=283660763]",
+        "tables": {
+            "tv_playerstate_dbg": {
+                "comment": "Поток событий player.state.change",
+                "fields": {
+                    "timestamp": "Метка времени Kafka" , 
+                    "host": "Хост источник события" ,
+                    "x_device_info": "x_device_info" ,
+                    "event_ts": "Время события" ,
+                    "subscriber_id": "Идентификатор пользователя" ,
+                    "device_platform": "Платформа" ,
+                    "device_id": "Уникальный идентификатор устройства" ,
+                    "state": "Состояние" ,
+                    "content_key": "Композитный ключ идентификации контента" ,
+                    "asset_id": "Asset_ID идентификатор источника в Metabase" ,
+                    "asset_resource_id": "Asset_Resource_ID идентификатор ресурса в Metabase" ,
+                    "channel_sid": "SID канала" ,
+                    "content_type": "Тип контента" ,
+                    "event_data": "Полная копия JSON-данных" 
+                }
+            },
+            "tv_watching_psc":{
+                "comment": "Интервалы телесмотрения на базе player.state.change",
+                "fields": {
+                    "subscriber_id": "Идентификатор пользователя",
+                    "city_domain": "Алиас города из subscriber_id", 
+                    "device_id": "Уникальный идентификатор устройства",
+                    "device_platform": "Платформа",
+                    "asset_id": "Asset_ID идентификатор источника в Metabase",  
+                    "asset_resource_id": "Asset_Resource_ID идентификатор ресурса в Metabase",
+                    "channel_sid": "SID канала", 
+                    "content_type": "Тип контента",
+                    "start_ts": "Время начального события",
+                    "start_event_state": "Начальное состояние",
+                    "start_event_data": "JSON-тело начального события",
+                    "stop_ts": "Время конечного события",
+                    "stop_event_state": "Конечное состояние",
+                    "stop_event_data": "JSON-тело конечного события",
+                    "kafka_ts_upd": "Время получения Kafka"             
+                }
+            },
+            "tv_watching_scw":{
+                "comment": "Интервалы телесмотрения, поток событий er.stb.channel.watch",
+                "fields": {
+                    "subscriber_id": "Идентификатор пользователя",
+                    "city_domain": "Алиас города из subscriber_id",
+                    "name": "Название события",
+                    "device_info": "Поле Info", 
+                    "device_id": "Уникальный идентификатор устройства",
+                    "device_platform": "Платформа",
+                    "events_ts": "Время отправки события",
+                    "lcn": "LCN канала",
+                    "channel_sid": "SID канала",
+                    "start": "Время начала интервала просмотра",
+                    "finish": "Время конца интервала просмотра",
+                    "kafka_ts_upd": "Время получения Kafka"
+                }
+            },
+            "device_content":{
+                "comment": "Витрина телесмотрения, устройство-контент",
+                "fields": {
+                    "day": "День на который собрана статистика", 
+                    "subscriber_id": "Идентификатор пользователя",
+                    "city_domain": "Алиас города из subscriber_id",
+                    "device_id": "Уникальный идентификатор устройства",
+                    "device_platform": "Платформа",
+                    "content_key": "Технический ключ группировки контента", 
+                    "content_type": "Тип контента",
+                    "asset_id": "Asset_ID идентификатор источника в Metabase",  
+                    "channel_sid": "SID канала", 
+                    "watch_sec": "Суммарное время смотрения",
+                    "interval_count": "Количество интервалов смотрения", 
+                    "data_source": "Сообщение источник данных"
+                }
+            },
+            "subscriber_minutes":{
+                "comment": "showcase for tv watching based on subscriber",
+                "fields": {
+                    "day": "День на который собрана статистика", 
+                    "subscriber_id": "Идентификатор пользователя",
+                    "city_domain": "Алиас города из subscriber_id",
+                    "device_id": "Уникальный идентификатор устройства",
+                    "device_platform": "Платформа",
+                    "data_source_agg": "debug Массив: Сообщения источники",
+                    "content_type_agg": "debug Массив: Тип контента",
+                    "total_min": "Суммарное время смотрения, минуты",
+                    "catchup_group_min": "Суммарно минут в группе CATCHUP",
+                    "live_group_min": "Суммарно минут в группе LIVE",
+                    "vod_group_min": "Суммарно минут в группе VOD",
+                    "other_group_min": "Суммарно минут в группе OTHER"
+                }
+            }
+        }
+    }
+}

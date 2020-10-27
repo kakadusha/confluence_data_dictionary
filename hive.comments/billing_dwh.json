@@ -1,0 +1,285 @@
+{
+  "billing_dwh": {
+    "description":"",
+    "tables": {
+      "d_agreements_tab": {
+        "comment": "Договоры",
+        "fields": {
+          "dimension_key": "",
+          "agreement_types_id": "",
+          "agreement_types_src_id": "",
+          "agreement_types_cname": "",
+          "agreement_types_cdescription": "",
+          "agreements_id": "",
+          "agreements_src_id": "",
+          "agreements_src_city_id": "",
+          "agreements_cname": "",
+          "agreements_cdescription": "",
+          "addenda_id": "",
+          "addenda_src_id": "",
+          "addenda_src_city_id": "",
+          "addenda_cname": "",
+          "addenda_cdescription": "",
+          "client_id": "",
+          "agreements_src_billing_id": "",
+          "addenda_src_billing_id": "",
+          "plan_id": "",
+          "agree_date": "",
+          "agreements_attr_entity_id": "",
+          "addenda_attr_entity_id": "",
+          "addenda_manager_id": "",
+          "agreements_manager_id": "",
+          "d_agreement_status": "",
+          "int_date": "",
+          "ktv_date": "",
+          "gs_date": "",
+          "cktv_date": "",
+          "domrutv_date": "",
+          "agreement_date": "",
+          "agr_cl_type_name": "",
+          "utility_client_name": "",
+          "mvno_date": "",
+          "domruclub_reg_date": "",
+          "termination_date": "",
+          "termination_date_last_agr": "",
+          "utility_account_number": ""
+        }
+      },
+      "d_chains": {
+        "comment": "Цепочка коммуникации ",
+        "fields": {
+          "dimension_key": "",
+          "chain_name": "",
+          "channel_type_combination_name": "",
+          "channel_type_combination_id": "",
+          "chain_desc": "",
+          "service_ind": ""
+        }
+      },
+      "d_channels": {
+        "comment": "Канал коммуникации",
+        "fields": {
+          "dimension_key": "",
+          "channel_id": "",
+          "channel_name": "",
+          "channel_group_nm": "",
+          "channel_cost": "",
+          "channel_template_id": "",
+          "template_name": "",
+          "subchannel_id": "",
+          "subchannel_name": ""
+        }
+      },
+      "d_cities_tab": {
+        "comment": "Город",
+        "fields": {
+          "dimension_key": "",
+          "city_src_id": "",
+          "city_name": "",
+          "effective_date": "",
+          "expiration_date": "",
+          "project_id": "",
+          "project_name": "",
+          "macroregion_name": "",
+          "founding_year": "",
+          "main_city_name": "",
+          "macroregion_name_before_201605": "",
+          "perm_tz_diff": "",
+          "macroregion_name_before_201701": "",
+          "stream_id": ""
+        }
+      },
+      "d_clients_tab": {
+        "comment": "Клиенты",
+        "fields": {
+          "dimension_key": "",
+          "src_id": "",
+          "src_billing_id": "",
+          "cname": "",
+          "cdescription": "",
+          "property_form_name": "",
+          "inn": "",
+          "birthdate": "",
+          "sex": "",
+          "city_id": "",
+          "u_address_id": "",
+          "f_address_id": "",
+          "effective_date": "",
+          "expiration_date": "",
+          "brand_name": "",
+          "sphere": "",
+          "employees_count": "",
+          "okved_name": "",
+          "rosstat_business": "",
+          "topology": "",
+          "territory": "",
+          "segment": "",
+          "industry_okved": "",
+          "segment_id": "",
+          "seg_enum_val_id": "",
+          "client_id": "",
+          "vertical_market": ""
+        }
+      },
+      "d_communication_templates": {
+        "comment": "Шаблоны; наборы блоков ЕМТО",
+        "fields": {
+          "dimension_key": "",
+          "template_id": "",
+          "template_name": "",
+          "template_sets_id": "",
+          "template_sets_name": "",
+          "channel_id": "",
+          "sa_dt": ""
+        }
+      },
+      "d_daytime_tab": {
+        "comment": "Время суток",
+        "fields": {
+          "dimension_key": "",
+          "id": "",
+          "sec": "",
+          "min": "",
+          "hour": "",
+          "sec_seq": "",
+          "time_string": "",
+          "part_day": ""
+        }
+      },
+      "d_objectives": {
+        "comment": "Тематика",
+        "fields": {
+          "dimension_key": "",
+          "gen_objective_nm": "",
+          "objective_id": "",
+          "objective_nm": "",
+          "campaignid": "",
+          "campaign_code": "",
+          "campaign_name": "",
+          "cell_name": "",
+          "cell_code": "",
+          "cell_id": "",
+          "group_type": "",
+          "communication_start_dttm": "",
+          "communication_end_dttm": "",
+          "cell_name_for_reports": "",
+          "root_dimension_key": "",
+          "source_ind": ""
+        }
+      },
+      "d_offer_templates": {
+        "comment": "Предложения кампании",
+        "fields": {
+          "dimension_key": "",
+          "offer_template_id": "",
+          "offer_template_name": ""
+        }
+      },
+      "d_offers": {
+        "comment": "Целевое действие",
+        "fields": {
+          "dimension_key": "",
+          "offer_history_id": "",
+          "offer_id": "",
+          "offer_code": "",
+          "offer_name": "",
+          "campaign_offer_id": "",
+          "campaign_offer_nm": "",
+          "campaign_offer_category": "",
+          "offer_product_id": "",
+          "offer_product_nm": "",
+          "offer_product_category_id": "",
+          "offer_product_category_nm": "",
+          "offer_kind": "",
+          "communication_mode": "",
+          "communication_mode_nm": "",
+          "restriction_option": "",
+          "offer_product_nm_wo_rstr": "",
+          "effective_date": "",
+          "expiration_date": "",
+          "offer_name_for_reports": "",
+          "root_dimension_key": "",
+          "sa_dt": ""
+        }
+      },
+      "d_treatments": {
+        "comment": "",
+        "fields": {
+          "dimension_key": "",
+          "treatmentinstid": "",
+          "treatment_code": ""
+        }
+      },
+      "f277_response_type_2": {
+        "comment": "Отклики 2-го и 3-го типа",
+        "fields": {
+          "d_offer": "",
+          "d_chain": "",
+          "d_objective": "",
+          "d_channel": "",
+          "d_treatment": "",
+          "d_offer_template": "",
+          "d_client": "",
+          "d_agreement": "",
+          "d_city": "",
+          "d_calendar": "",
+          "response_count_type_2": "",
+          "response_fact_2": "",
+          "response_fact_3": "",
+          "d_response_dttm_type_1": "",
+          "d_response_dttm_type_2": "",
+          "d_response_dttm_type_3": "",
+          "d_response_time_type_1": "",
+          "d_response_time_type_2": "",
+          "d_response_time_type_3": "",
+          "update_dt": "",
+          "d_response_type": "",
+          "insert_dt": "",
+          "response_count_type_3": ""
+        }
+      },
+      "f_responses": {
+        "comment": "Campaign. Отклики",
+        "fields": {
+          "d_offer_key": "",
+          "d_chain_key": "",
+          "d_objective_key": "",
+          "d_channel_key": "",
+          "d_treatment_key": "",
+          "d_offer_template_key": "",
+          "client_rk": "",
+          "agreement_rk": "",
+          "d_cities_key": "",
+          "charged_responses_count": "",
+          "response_count_type_1": "",
+          "response_count_type_2": "",
+          "response_count_type_3": "",
+          "response_fact_1": "",
+          "response_fact_2": "",
+          "response_fact_3": "",
+          "deactivated_comm_count": "",
+          "rejected_comm_count": "",
+          "response_feedback_id": "",
+          "d_response_dttm_type_1": "",
+          "d_response_dttm_type_2": "",
+          "d_response_dttm_type_3": "",
+          "group_number": "",
+          "group_last_comm_date": "",
+          "group_root_hash": "",
+          "campaignid": "",
+          "offerid": "",
+          "group_root_raw": "",
+          "group_number_raw": "",
+          "d_communication_templates": "",
+          "d_email_subject": "",
+          "d_response_time_type_1": "",
+          "d_response_time_type_2": "",
+          "d_response_time_type_3": "",
+          "d_subgroup_type_cg": "",
+          "sa_dt": "",
+          "d_calendar_key": ""
+        }
+      }
+    }
+  }
+}

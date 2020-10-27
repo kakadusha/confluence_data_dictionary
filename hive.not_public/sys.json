@@ -1,0 +1,431 @@
+{
+  "sys": {
+    "bucketing_cols": {
+      "comment": "",
+      "fields": {
+        "sd_id": "from deserializer",
+        "bucket_col_name": "from deserializer"
+      }
+    },
+    "cds": {
+      "comment": "",
+      "fields": {}
+    },
+    "columns_v2": {
+      "comment": "",
+      "fields": {
+        "cd_id": "from deserializer",
+        "comment": "from deserializer",
+        "column_name": "from deserializer",
+        "type_name": "from deserializer"
+      }
+    },
+    "database_params": {
+      "comment": "",
+      "fields": {
+        "db_id": "from deserializer",
+        "param_key": "from deserializer"
+      }
+    },
+    "db_privs": {
+      "comment": "",
+      "fields": {
+        "db_grant_id": "from deserializer",
+        "create_time": "from deserializer",
+        "db_id": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer",
+        "db_priv": "from deserializer"
+      }
+    },
+    "db_version": {
+      "comment": "",
+      "fields": {
+        "ver_id": "from deserializer",
+        "schema_version": "from deserializer"
+      }
+    },
+    "dbs": {
+      "comment": "",
+      "fields": {
+        "db_id": "from deserializer",
+        "db_location_uri": "from deserializer",
+        "name": "from deserializer",
+        "owner_name": "from deserializer"
+      }
+    },
+    "funcs": {
+      "comment": "",
+      "fields": {
+        "func_id": "from deserializer",
+        "class_name": "from deserializer",
+        "create_time": "from deserializer",
+        "db_id": "from deserializer",
+        "func_name": "from deserializer",
+        "func_type": "from deserializer",
+        "owner_name": "from deserializer"
+      }
+    },
+    "global_privs": {
+      "comment": "",
+      "fields": {
+        "user_grant_id": "from deserializer",
+        "create_time": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer",
+        "user_priv": "from deserializer"
+      }
+    },
+    "key_constraints": {
+      "comment": "",
+      "fields": {
+        "child_cd_id": "from deserializer",
+        "child_integer_idx": "from deserializer",
+        "child_tbl_id": "from deserializer",
+        "parent_cd_id": "from deserializer",
+        "parent_integer_idx": "from deserializer",
+        "parent_tbl_id": "from deserializer",
+        "position": "from deserializer",
+        "constraint_name": "from deserializer",
+        "constraint_type": "from deserializer",
+        "update_rule": "from deserializer",
+        "delete_rule": "from deserializer",
+        "enable_validate_rely": "from deserializer"
+      }
+    },
+    "mv_creation_metadata": {
+      "comment": "",
+      "fields": {
+        "mv_creation_metadata_id": "from deserializer",
+        "db_name": "from deserializer",
+        "tbl_name": "from deserializer"
+      }
+    },
+    "mv_tables_used": {
+      "comment": "",
+      "fields": {
+        "mv_creation_metadata_id": "from deserializer"
+      }
+    },
+    "part_col_privs": {
+      "comment": "",
+      "fields": {
+        "part_column_grant_id": "from deserializer",
+        "column_name": "from deserializer",
+        "create_time": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "part_id": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer",
+        "part_col_priv": "from deserializer"
+      }
+    },
+    "part_col_stats": {
+      "comment": "",
+      "fields": {
+        "cs_id": "from deserializer",
+        "db_name": "from deserializer",
+        "table_name": "from deserializer",
+        "partition_name": "from deserializer",
+        "column_name": "from deserializer",
+        "column_type": "from deserializer",
+        "part_id": "from deserializer",
+        "long_low_value": "from deserializer",
+        "long_high_value": "from deserializer",
+        "double_high_value": "from deserializer",
+        "double_low_value": "from deserializer",
+        "big_decimal_low_value": "from deserializer",
+        "big_decimal_high_value": "from deserializer",
+        "num_nulls": "from deserializer",
+        "num_distincts": "from deserializer",
+        "avg_col_len": "from deserializer",
+        "max_col_len": "from deserializer",
+        "num_trues": "from deserializer",
+        "num_falses": "from deserializer"
+      }
+    },
+    "part_privs": {
+      "comment": "",
+      "fields": {
+        "part_grant_id": "from deserializer",
+        "create_time": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "part_id": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer",
+        "part_priv": "from deserializer"
+      }
+    },
+    "partition_key_vals": {
+      "comment": "",
+      "fields": {
+        "part_id": "from deserializer",
+        "part_key_val": "from deserializer"
+      }
+    },
+    "partition_keys": {
+      "comment": "",
+      "fields": {
+        "tbl_id": "from deserializer",
+        "pkey_comment": "from deserializer",
+        "pkey_name": "from deserializer",
+        "pkey_type": "from deserializer"
+      }
+    },
+    "partition_params": {
+      "comment": "",
+      "fields": {
+        "part_id": "from deserializer",
+        "param_key": "from deserializer"
+      }
+    },
+    "partition_stats_view": {
+      "comment": "",
+      "fields": {}
+    },
+    "partitions": {
+      "comment": "",
+      "fields": {
+        "part_id": "from deserializer",
+        "create_time": "from deserializer",
+        "last_access_time": "from deserializer",
+        "part_name": "from deserializer",
+        "sd_id": "from deserializer"
+      }
+    },
+    "role_map": {
+      "comment": "",
+      "fields": {
+        "role_grant_id": "from deserializer",
+        "add_time": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer"
+      }
+    },
+    "roles": {
+      "comment": "",
+      "fields": {
+        "role_id": "from deserializer",
+        "create_time": "from deserializer",
+        "owner_name": "from deserializer"
+      }
+    },
+    "sd_params": {
+      "comment": "",
+      "fields": {
+        "sd_id": "from deserializer",
+        "param_key": "from deserializer"
+      }
+    },
+    "sds": {
+      "comment": "",
+      "fields": {
+        "sd_id": "from deserializer",
+        "cd_id": "from deserializer",
+        "input_format": "from deserializer",
+        "is_compressed": "from deserializer",
+        "is_storedassubdirectories": "from deserializer",
+        "location": "from deserializer",
+        "num_buckets": "from deserializer",
+        "output_format": "from deserializer"
+      }
+    },
+    "sequence_table": {
+      "comment": "",
+      "fields": {
+        "sequence_name": "from deserializer"
+      }
+    },
+    "serde_params": {
+      "comment": "",
+      "fields": {
+        "serde_id": "from deserializer",
+        "param_key": "from deserializer"
+      }
+    },
+    "serdes": {
+      "comment": "",
+      "fields": {
+        "serde_id": "from deserializer",
+        "name": "from deserializer"
+      }
+    },
+    "skewed_col_names": {
+      "comment": "",
+      "fields": {
+        "sd_id": "from deserializer",
+        "skewed_col_name": "from deserializer"
+      }
+    },
+    "skewed_col_value_loc_map": {
+      "comment": "",
+      "fields": {
+        "sd_id": "from deserializer",
+        "string_list_id_kid": "from deserializer"
+      }
+    },
+    "skewed_string_list": {
+      "comment": "",
+      "fields": {}
+    },
+    "skewed_string_list_values": {
+      "comment": "",
+      "fields": {
+        "string_list_id": "from deserializer",
+        "string_list_value": "from deserializer"
+      }
+    },
+    "skewed_values": {
+      "comment": "",
+      "fields": {
+        "sd_id_oid": "from deserializer",
+        "string_list_id_eid": "from deserializer"
+      }
+    },
+    "sort_cols": {
+      "comment": "",
+      "fields": {
+        "sd_id": "from deserializer",
+        "column_name": "from deserializer",
+        "order": "from deserializer"
+      }
+    },
+    "tab_col_stats": {
+      "comment": "",
+      "fields": {
+        "cs_id": "from deserializer",
+        "db_name": "from deserializer",
+        "table_name": "from deserializer",
+        "column_name": "from deserializer",
+        "column_type": "from deserializer",
+        "tbl_id": "from deserializer",
+        "long_low_value": "from deserializer",
+        "long_high_value": "from deserializer",
+        "double_high_value": "from deserializer",
+        "double_low_value": "from deserializer",
+        "big_decimal_low_value": "from deserializer",
+        "big_decimal_high_value": "from deserializer",
+        "num_nulls": "from deserializer",
+        "num_distincts": "from deserializer",
+        "avg_col_len": "from deserializer",
+        "max_col_len": "from deserializer",
+        "num_trues": "from deserializer",
+        "num_falses": "from deserializer"
+      }
+    },
+    "table_params": {
+      "comment": "",
+      "fields": {
+        "tbl_id": "from deserializer",
+        "param_key": "from deserializer"
+      }
+    },
+    "table_stats_view": {
+      "comment": "",
+      "fields": {}
+    },
+    "tbl_col_privs": {
+      "comment": "",
+      "fields": {
+        "tbl_column_grant_id": "from deserializer",
+        "column_name": "from deserializer",
+        "create_time": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer",
+        "tbl_col_priv": "from deserializer",
+        "tbl_id": "from deserializer"
+      }
+    },
+    "tbl_privs": {
+      "comment": "",
+      "fields": {
+        "tbl_grant_id": "from deserializer",
+        "create_time": "from deserializer",
+        "grant_option": "from deserializer",
+        "grantor": "from deserializer",
+        "grantor_type": "from deserializer",
+        "principal_name": "from deserializer",
+        "principal_type": "from deserializer",
+        "tbl_priv": "from deserializer",
+        "tbl_id": "from deserializer"
+      }
+    },
+    "tbls": {
+      "comment": "",
+      "fields": {
+        "tbl_id": "from deserializer",
+        "create_time": "from deserializer",
+        "db_id": "from deserializer",
+        "last_access_time": "from deserializer",
+        "owner": "from deserializer",
+        "retention": "from deserializer",
+        "sd_id": "from deserializer",
+        "tbl_name": "from deserializer",
+        "tbl_type": "from deserializer",
+        "view_expanded_text": "from deserializer",
+        "view_original_text": "from deserializer"
+      }
+    },
+    "version": {
+      "comment": "",
+      "fields": {}
+    },
+    "wm_mappings": {
+      "comment": "",
+      "fields": {
+        "rp_name": "from deserializer",
+        "entity_type": "from deserializer",
+        "entity_name": "from deserializer",
+        "pool_path": "from deserializer"
+      }
+    },
+    "wm_pools": {
+      "comment": "",
+      "fields": {
+        "rp_name": "from deserializer",
+        "path": "from deserializer",
+        "alloc_fraction": "from deserializer",
+        "query_parallelism": "from deserializer"
+      }
+    },
+    "wm_pools_to_triggers": {
+      "comment": "",
+      "fields": {
+        "rp_name": "from deserializer",
+        "pool_path": "from deserializer"
+      }
+    },
+    "wm_resourceplans": {
+      "comment": "",
+      "fields": {
+        "name": "from deserializer",
+        "status": "from deserializer",
+        "query_parallelism": "from deserializer"
+      }
+    },
+    "wm_triggers": {
+      "comment": "",
+      "fields": {
+        "rp_name": "from deserializer",
+        "name": "from deserializer",
+        "trigger_expression": "from deserializer"
+      }
+    }
+  }
+}

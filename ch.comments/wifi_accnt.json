@@ -1,0 +1,360 @@
+{
+  "wifi_accnt": {
+    "description": "данные radius сессий на хотспотах wifi",
+    "tables": {
+      "radius_sessions_wifi_shard": {
+        "comment": "replicated таблица с данными wifi-аккаунтинга",
+        "fields": {
+          "User-Name": "Логин: для неавторизованных mac-адрес, для гостей .*@wifi, для премиум пользователей .*@wifi_pa, для пользователей домру - их логин",
+          "NAS-Identifier": "Идентификатор NAS",
+          "Acct-Status-Type": "Тип сессии (всегда == 2)",
+          "Acct-Session-Id": "Идентификатор сессии радиуса",
+          "Acct-Input-Octets": "Объём входящего траффика в байтах без учёта gigawords",
+          "Acct-Input-Gigawords": "Объём входящего траффика в gigawords (1gw == 2^32bytes)",
+          "Acct-Output-Octets": "Объём исходящего траффика в байтах без учёта gigawords",
+          "Acct-Output-Gigawords": "Объём исходящего траффика в gigawords (1gw == 2^32bytes)",
+          "Calling-Station-ID": "Атрибут Calling-Station-Id",
+          "Framed-IP-Address": "Атрибут Framed-IP-Address",
+          "Acct-Session-Time": "Время события",
+          "Event-Timestamp": "Unix epoch timestamp события",
+          "ADSL-Agent-Circuit-Id": "Атрибут ADSL-Agent-Circuit-Id",
+          "Alc-SLA-Prof-Str": "Атрибут Alc-SLA-Prof-Str",
+          "Acct-Terminate-Cause": "Причина завершения сессии",
+          "Acct-Multi-Session-Id": "уникальный идентификатор, позволяющий связать воедино множество сеансовых записей в журнальном файле",
+          "NAS-Port-Id": "Идентификатор порта NAS",
+          "NAS-IP-Address": "IP-адрес сервера NAS, который запрашивает аутентификацию пользователя",
+          "NAS-port-Type": "тип физического порта NAS, где аутентифицируется пользователь",
+          "Huawei-Domain-Name": "Атрибут Huawei-Domain-Name",
+          "Huawei-Policy-Name": "Атрибут Huawei-Policy-Name",
+          "Alc-Client-Hardware-Addr": "Атрибут Alc-Client-Hardware-Addr",
+          "Wifi-sub": "Маркер wifi сессии (всегда 1)",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "vlan": "VLAN",
+          "city_id": "Идентификатор города",
+          "duration": "Длительность сессии",
+          "input_bytes": "Общий объём входящего траффика (Input-Gigawords * 2^32 + Input-Octets)",
+          "output_bytes": "Общий объём исходящего траффика (Output-Gigawords * 2^32 + Output-Octets)",
+          "start_time": "Unix epoch timestamp начала сессии",
+          "stop_time": "Unix epoch timestamp окончания сессии"
+        }
+      },
+      "acct_sess_wifi": {
+        "comment": "distributed таблица с данными wifi-аккаунтинга, смотрит в radius_sessions_wifi_shard",
+        "fields": {
+          "User-Name": "Логин: для неавторизованных mac-адрес, для гостей .*@wifi, для премиум пользователей .*@wifi_pa, для пользователей домру - их логин",
+          "NAS-Identifier": "Идентификатор NAS",
+          "Acct-Status-Type": "Тип сессии (всегда == 2)",
+          "Acct-Session-Id": "Идентификатор сессии радиуса",
+          "Acct-Input-Octets": "Объём входящего траффика в байтах без учёта gigawords",
+          "Acct-Input-Gigawords": "Объём входящего траффика в gigawords (1gw == 2^32bytes)",
+          "Acct-Output-Octets": "Объём исходящего траффика в байтах без учёта gigawords",
+          "Acct-Output-Gigawords": "Объём исходящего траффика в gigawords (1gw == 2^32bytes)",
+          "Calling-Station-ID": "Атрибут Calling-Station-Id",
+          "Framed-IP-Address": "Атрибут Framed-IP-Address",
+          "Acct-Session-Time": "Время события",
+          "Event-Timestamp": "Unix epoch timestamp события",
+          "ADSL-Agent-Circuit-Id": "Атрибут ADSL-Agent-Circuit-Id",
+          "Alc-SLA-Prof-Str": "Атрибут Alc-SLA-Prof-Str",
+          "Acct-Terminate-Cause": "Причина завершения сессии",
+          "Acct-Multi-Session-Id": "уникальный идентификатор, позволяющий связать воедино множество сеансовых записей в журнальном файле",
+          "NAS-Port-Id": "Идентификатор порта NAS",
+          "NAS-IP-Address": "IP-адрес сервера NAS, который запрашивает аутентификацию пользователя",
+          "NAS-port-Type": "тип физического порта NAS, где аутентифицируется пользователь",
+          "Huawei-Domain-Name": "Атрибут Huawei-Domain-Name",
+          "Huawei-Policy-Name": "Атрибут Huawei-Policy-Name",
+          "Alc-Client-Hardware-Addr": "Атрибут Alc-Client-Hardware-Addr",
+          "Wifi-sub": "Маркер wifi сессии (всегда 1)",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "vlan": "VLAN",
+          "city_id": "Идентификатор города",
+          "duration": "Длительность сессии",
+          "input_bytes": "Общий объём входящего траффика (Input-Gigawords * 2^32 + Input-Octets)",
+          "output_bytes": "Общий объём исходящего траффика (Output-Gigawords * 2^32 + Output-Octets)",
+          "start_time": "Unix epoch timestamp начала сессии",
+          "stop_time": "Unix epoch timestamp окончания сессии"
+        }
+      },
+      "dict_city_tz": {
+        "comment": "Log таблица с часовыми поясами городов",
+        "fields": {
+          "city_id": "идентификатор города",
+          "tz": "разница в часах от UTC"
+        }
+      },
+      "inf_mac_phone": {
+        "comment": "таблица с сопоставлением номеров и MACов, смотрит в HDFS",
+        "fields": {
+          "mac": "MAC-адрес устройства",
+          "phone": "номер телефона без кода страны",
+          "billing_id": "идентификатор биллинга",
+          "first_seen": "время первого появления данной связки mac-phone",
+          "last_seen": "время последнего появления данной связки mac-phone",
+          "source": "источник данных о связи mac и номера",
+          "update_date": "время последнего обновления записи"
+        }
+      },
+      "mac_phone": {
+        "comment": "distributed таблица с сопоставлением номеров и MACов, смотрит в mac_phone_shard",
+        "fields": {
+          "mac": "MAC-адрес устройства",
+          "phone": "номер телефона без кода страны",
+          "billing_id": "идентификатор биллинга",
+          "first_seen": "время первого появления данной связки mac-phone",
+          "last_seen": "время последнего появления данной связки mac-phone",
+          "source": "источник данных о связи mac и номера",
+          "update_date": "время последнего обновления записи"
+        }
+      },
+      "mac_phone_shard": {
+        "comment": "replicated таблица с сопоставлением номеров и MACов",
+        "fields": {
+          "mac": "MAC-адрес устройства",
+          "phone": "номер телефона без кода страны",
+          "billing_id": "идентификатор биллинга",
+          "first_seen": "время первого появления данной связки mac-phone",
+          "last_seen": "время последнего появления данной связки mac-phone",
+          "source": "источник данных о связи mac и номера",
+          "update_date": "время последнего обновления записи"
+        }
+      },
+      "sess_days_wifi": {
+        "comment": "distributed таблица с количествами пользователей в разрезе дня, смотрит в sess_days_wifi_shard",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "period": "дата с точностью до дня",
+          "count_users": "количество пользователей",
+          "count_uniq_users": "количество уникальных пользователей"
+        }
+      },
+      "sess_days_wifi_shard": {
+        "comment": "replicated aggregating таблица с количествами пользователей в разрезе дня",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "period": "дата с точностью до дня",
+          "count_users": "количество пользователей",
+          "count_uniq_users": "количество уникальных пользователей"
+        }
+      },
+      "sess_hours_wifi": {
+        "comment": "distributed таблица с количествами пользователей в разрезе часа, смотрит в sess_hours_wifi_shard",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "period": "дата с точностью до дня",
+          "count_users": "количество пользователей",
+          "count_uniq_users": "количество уникальных пользователей"
+        }
+      },
+      "sess_hours_wifi_shard": {
+        "comment": "replicated aggregating таблица с количествами пользователей в разрезе часа",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "period": "дата с точностью до дня",
+          "count_users": "количество пользователей",
+          "count_uniq_users": "количество уникальных пользователей"
+        }
+      },
+      "sess_month_wifi": {
+        "comment": "distributed таблица с количествами пользователей в разрезе месяца, смотрит в sess_month_wifi_shard",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "period": "дата с точностью до дня",
+          "count_users": "количество пользователей",
+          "count_uniq_users": "количество уникальных пользователей"
+        }
+      },
+      "sess_hours_month_shard": {
+        "comment": "replicated aggregating таблица с количествами пользователей в разрезе месяца",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "period": "дата с точностью до дня",
+          "count_users": "количество пользователей",
+          "count_uniq_users": "количество уникальных пользователей"
+        }
+      },
+      "v_acct_sess_wifi": {
+        "comment": "вью над acct_sess_wifi",
+        "fields": {
+          "user_name": "Логин: для неавторизованных mac-адрес, для гостей .*@wifi, для премиум пользователей .*@wifi_pa, для пользователей домру - их логин",
+          "mac_address": "Атрибут Calling-Station-Id",
+          "city_id": "Идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "start_time": "Unix epoch timestamp начала сессии",
+          "stop_time": "Unix epoch timestamp окончания сессии",
+          "output_bytes": "Общий объём исходящего траффика",
+          "input_bytes": "Общий объём входящего траффика",
+          "duration": "Длительность сессии"
+        }
+      },
+      "v_acct_sess_wifi_all": {
+        "comment": "вью над acct_sess_wifi со всеми полями и определением city_id у неопределённых записей через NAS-Identifier",
+        "fields": {
+          "User-Name": "Логин: для неавторизованных mac-адрес, для гостей .*@wifi, для премиум пользователей .*@wifi_pa, для пользователей домру - их логин",
+          "NAS-Identifier": "Идентификатор NAS",
+          "Acct-Status-Type": "Тип сессии (всегда == 2)",
+          "Acct-Session-Id": "Идентификатор сессии радиуса",
+          "Acct-Input-Octets": "Объём входящего траффика в байтах без учёта gigawords",
+          "Acct-Input-Gigawords": "Объём входящего траффика в gigawords (1gw == 2^32bytes)",
+          "Acct-Output-Octets": "Объём исходящего траффика в байтах без учёта gigawords",
+          "Acct-Output-Gigawords": "Объём исходящего траффика в gigawords (1gw == 2^32bytes)",
+          "Calling-Station-ID": "Атрибут Calling-Station-Id",
+          "Framed-IP-Address": "Атрибут Framed-IP-Address",
+          "Acct-Session-Time": "Время события",
+          "Event-Timestamp": "Unix epoch timestamp события",
+          "ADSL-Agent-Circuit-Id": "Атрибут ADSL-Agent-Circuit-Id",
+          "Alc-SLA-Prof-Str": "Атрибут Alc-SLA-Prof-Str",
+          "Acct-Terminate-Cause": "Причина завершения сессии",
+          "Acct-Multi-Session-Id": "уникальный идентификатор, позволяющий связать воедино множество сеансовых записей в журнальном файле",
+          "NAS-Port-Id": "Идентификатор порта NAS",
+          "NAS-IP-Address": "IP-адрес сервера NAS, который запрашивает аутентификацию пользователя",
+          "NAS-port-Type": "тип физического порта NAS, где аутентифицируется пользователь",
+          "Huawei-Domain-Name": "Атрибут Huawei-Domain-Name",
+          "Huawei-Policy-Name": "Атрибут Huawei-Policy-Name",
+          "Alc-Client-Hardware-Addr": "Атрибут Alc-Client-Hardware-Addr",
+          "Wifi-sub": "Маркер wifi сессии (всегда 1)",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "vlan": "VLAN",
+          "city_id": "Идентификатор города",
+          "duration": "Длительность сессии",
+          "input_bytes": "Общий объём входящего траффика (Input-Gigawords * 2^32 + Input-Octets)",
+          "output_bytes": "Общий объём исходящего траффика (Output-Gigawords * 2^32 + Output-Octets)",
+          "start_time": "Unix epoch timestamp начала сессии",
+          "stop_time": "Unix epoch timestamp окончания сессии"
+        }
+      },
+      "v_acct_sess_wifi_sess": {
+        "comment": "вью над acct_sess_wifi",
+        "fields": {
+          "session": "Идентификатор сессии радиус",
+          "user_name": "Логин: для неавторизованных mac-адрес, для гостей .*@wifi, для премиум пользователей .*@wifi_pa, для пользователей домру - их логин",
+          "mac_address": "Атрибут Calling-Station-Id",
+          "city_id": "Идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость",
+          "start_time": "Unix epoch timestamp начала сессии",
+          "stop_time": "Unix epoch timestamp окончания сессии",
+          "output_bytes": "Общий объём исходящего траффика",
+          "input_bytes": "Общий объём входящего траффика",
+          "duration": "Длительность сессии"
+        }
+      },
+      "v_acct_session_wifi": {
+        "comment": "невалидная вью, смотрит в radius_sessions_wifi",
+        "fields": {
+        }
+      },
+      "v_agr_sess_day_wifi": {
+        "comment": "вью с аггрегированными данными из sess_days_wifi",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость, 2 - неавторизованный уникальный, 4 - авторизованный уникальный",
+          "period_date": "дата с точностью до дня",
+          "cnt_user_sess": "количество пользователей, для auth_id in (1,5,6,7) - количество сессий, для auth_id in (2, 4) - количество уникальных"
+        }
+      },
+      "v_agr_sess_hour_wifi": {
+        "comment": "вью с аггрегированными данными из sess_hours_wifi",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость, 2 - неавторизованный уникальный, 4 - авторизованный уникальный",
+          "period_date": "дата и время с точностью до часа",
+          "cnt_user_sess": "количество пользователей, для auth_id in (1,5,6,7) - количество сессий, для auth_id in (2, 4) - количество уникальных"
+        }
+      },
+      "v_agr_sess_month_wifi": {
+        "comment": "вью с аггрегированными данными из sess_month_wifi",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость, 2 - неавторизованный уникальный, 4 - авторизованный уникальный",
+          "period_date": "дата с точностью до месяца",
+          "cnt_user_sess": "количество пользователей, для auth_id in (1,5,6,7) - количество сессий, для auth_id in (2, 4) - количество уникальных"
+        }
+      },
+      "v_agr_sess_year_wifi": {
+        "comment": "вью с аггрегированными данными из sess_month_wifi, аггрегированными до года",
+        "fields": {
+          "city_id": "идентификатор города",
+          "vlan": "VLAN",
+          "auth_id": "1 - неавторизованный пользователь, 5 - абонент домру, 6 - премиум-аккаунт, 7 - гость, 2 - неавторизованный уникальный, 4 - авторизованный уникальный",
+          "period_date": "дата с точностью до года",
+          "cnt_user_sess": "количество пользователей, для auth_id in (1,5,6,7) - количество сессий, для auth_id in (2, 4) - количество уникальных"
+        }
+      },
+      "view_mac_phone": {
+        "comment": "вью с сопоставлением номеров и MACов, смотрит в HDFS",
+        "fields": {
+          "mac": "MAC-адрес устройства",
+          "phone": "последний зафиксированный номер телефона с данным MAC",
+          "last_seen": "дата и время последнего появления данной связки mac-phone"
+        }
+      },
+      "view_mac_phone_last_update": {
+        "comment": "вью, показывающая дату последнего обновления источника view_mac_phone",
+        "fields": {
+          "update_date": "последняя дата обновления источника в HDFS"
+        }
+      },
+      "wifi_portal_log": {
+        "comment": "distributed таблица с логом ошибок wifi аккаунтинга, смотрит в wifi_portal_log_shard",
+        "fields": {
+          "ts": "дата и время ошибки",
+          "except_message": "человекочитаемое сообщение об ошибке",
+          "except_code": "код ошибки",
+          "except_name": "наименование исключения",
+          "http_code": "возвращаемый код состояния http",
+          "endpoint": "эндпоинт URL откуда вызвано исключение",
+          "mac": "MAC-адрес",
+          "ip": "IP-адрес",
+          "vlan": "VLAN",
+          "domain": "наименование сервера",
+          "session": "идентификатор радиус сессии",
+          "city_id": "идентификатор города",
+          "page_id": "эндпоинт страницы, на которой находился пользователь",
+          "user_name": "логин пользователя wifi",
+          "nas_ip": "IP-адрес сервера NAS",
+          "filter": "",
+          "profile": "Alc-SLA-Prof-Str or Huawei-Policy-Name",
+          "timeout": "таймаут в секундах"
+        }
+      },
+      "wifi_portal_log_shard": {
+        "comment": "replicated таблица с логом ошибок wifi аккаунтинга",
+        "fields": {
+          "ts": "дата и время ошибки",
+          "except_message": "человекочитаемое сообщение об ошибке",
+          "except_code": "код ошибки",
+          "except_name": "наименование исключения",
+          "http_code": "возвращаемый код состояния http",
+          "endpoint": "эндпоинт URL откуда вызвано исключение",
+          "mac": "MAC-адрес",
+          "ip": "IP-адрес",
+          "vlan": "VLAN",
+          "domain": "наименование сервера",
+          "session": "идентификатор радиус сессии",
+          "city_id": "идентификатор города",
+          "page_id": "эндпоинт страницы, на которой находился пользователь",
+          "user_name": "логин пользователя wifi",
+          "nas_ip": "IP-адрес сервера NAS",
+          "filter": "",
+          "profile": "Alc-SLA-Prof-Str or Huawei-Policy-Name",
+          "timeout": "таймаут в секундах"
+        }
+      }
+    }
+  }
+}

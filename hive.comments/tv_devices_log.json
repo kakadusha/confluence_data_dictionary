@@ -1,0 +1,97 @@
+{
+    "tv_devices_log": {
+        "description": "Обработка данных [телесмотрения|https://kb.ertelecom.ru/pages/viewpage.action?pageId=283660763]",
+        "tables": {
+            "parsed_kafka_message": {
+                "comment": "Сырые данные из кафка топика tv-devices-log",
+                "fields": {
+                    "ts": "kafka time",
+                    "host": "source host",
+                    "xAuthToken": "HTTP X-Auth-Token",
+                    "xDeviceInfo": "HTTP X-Device-Info",
+                    "eventsJson": "array with events",
+                    "version": "verion of message format"                
+                }
+            },
+            "tv_watching_psc": {
+                "comment": "Зеркало: Интервалы телесмотрения на базе player.state.change",
+                "fields": {
+                    "subscriber_id": "Идентификатор пользователя",
+                    "city_domain": "Алиас города из subscriber_id",
+                    "device_id": "Уникальный идентификатор устройства",
+                    "device_platform": "Платформа",
+                    "asset_id": "Asset_ID идентификатор источника в Metabase",
+                    "asset_resource_id": "Asset_Resource_ID идентификатор ресурса в Metabase",
+                    "channel_sid": "SID канала",
+                    "content_type": "Тип контента",
+                    "start_ts": "Время начального события",
+                    "start_event_state": "Начальное состояние",
+                    "start_event_data": "JSON-тело начального события",
+                    "stop_ts": "Время конечного события",
+                    "stop_event_state": "Конечное состояние",
+                    "stop_event_data": "JSON-тело конечного события",
+                    "kafka_ts_upd": "Время получения Kafka",
+                    "year": "Год",
+                    "month": "Месяц"
+                }
+            },
+            "tv_watching_scw": {
+                "comment": "Зеркало: Интервалы телесмотрения на базе er.stb.channel.watch",
+                "fields": {
+                    "subscriber_id": "Идентификатор пользовател",
+                    "city_domain":"Алиас гороа из subscriber_id", 
+                    "device_info":"Поле Info",
+                    "device_id":"Уникальный иденификатор устройств",
+                    "device_platform":"Платформ",
+                    "events_ts":"Врем отправки событи",
+                    "lcn":"LCN канал",
+                    "channel_sid":"SID канал",
+                    "start_ts":"Время начала интервала просмот",
+                    "stop_ts":"Время конца интервала просотр",
+                    "kafka_ts_upd":"Время получения Kafk",
+                    "year":"Год",
+                    "month":"Месяц",
+                    "day":"День"
+                }
+            },
+            "subscriber_minutes": {
+                "comment": "Витрина подписчик - тип контента - минуты / день",
+                "fields": {
+                    "day" : "День на который собрана статистика",
+                    "subscriber_id" : "Идентификатор пользователя",
+                    "city_domain" : "Алиас города из subscriber_id",
+                    "device_id" : "Уникальный идентификатор устройства",
+                    "device_platform" : "Платформа",
+                    "data_source_agg" : "debug Массив: Сообщения источники",
+                    "content_type_agg" : "debug Массив: Тип контента",
+                    "total_min" : "Суммарное время смотрения, минуты",
+                    "catchup_group_min" : "Суммарно минут в группе CATCHUP",
+                    "live_group_min" : "Суммарно минут в группе LIVE",
+                    "vod_group_min" : "Суммарно минут в группе VOD",
+                    "other_group_min" : "Суммарно минут в группе OTHER",
+                    "year":"Год",
+                    "month":"Месяц"                
+                }
+            },
+            "device_content": {
+                "comment": "Витрина устройство - контент - секунды / день",
+                "fields": {
+                    "day": "День на который собрана статистика",
+                    "subscriber_id": "Идентификатор пользователя",
+                    "city_domain": "Алиас города из subscriber_id",
+                    "device_id": "Уникальный идентификатор устройства",
+                    "device_platform": "Платформа",
+                    "content_key": "Технический ключ группировки контента",
+                    "content_type": "Тип контента",
+                    "asset_id": "Asset_ID идентификатор источника в Metabase",
+                    "channel_sid": "SID канала",
+                    "watch_sec": "Суммарное время смотрения",
+                    "interval_count": "Количество интервалов смотрения",
+                    "data_source": "Сообщение источник данных",
+                    "year":"Год",
+                    "month":"Месяц"
+                }
+            }
+        }
+    }
+}
