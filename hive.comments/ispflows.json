@@ -1,0 +1,55 @@
+{
+    "ispflows": {
+        "description":"",
+        "tables": {
+            "resource": {
+                "comment": "Пользовательские tcp сессии с типом трафика - http",
+                "fields": {
+                    "telco_id": "Идентификатор биллинга. Поле партицирования",
+                    "begin_connection_time": "Время, когда увидели первый пакет flow",
+                    "end_connection_time": "Время, когда увидели последний пакет flow",
+                    "client_ip_address4": "IP адрес, выданный роутеру абонента (серый или белый). Null, если ip_version=6",
+                    "client_ip_address6": "IP адрес, выданный роутеру абонента (серый или белый). Null, если ip_version=4",
+                    "client_ip_port": "Абонентский серый Tcp/udp порт flow",
+                    "server_ip_address4": "IPv4 адрес назаначения",
+                    "server_ip_address6": "IPv6 адрес назаначения",
+                    "server_ip_port": "Порт назначения",
+                    "protocol_code": "IP протокол согласно RFC, для TCP=6, для UDP=17",
+                    "point_id": "",
+                    "res_url": "URL первого запроса в flow",
+                    "res_bytes_count": "Суммарное количество байт в пакетах к абоненту и от абонента, пролетевших во flow",
+                    "res_term_cause": "",
+                    "res_http_method": "Метод http запроса. GET(0), POST(1), PUT(2), DELETE(3), CONNECT(4), HEAD(5)",
+                    "res_abonent_id": "Логин абонента (считается на DPI по связке с радиус-аккаунтингом), считается в момент, когда создается flow",
+                    "res_data_content_id": "",
+                    "for_day": "День, за который пришел запрос. Расчитывается на основе ts_start. Поле партицирования"
+                },
+                "sample_hide": true
+            },
+            "raw_flows": {
+                "comment": "Пользовательские tcp сессии",
+                "fields": {
+                    "telco_id": "Идентификатор биллинга. Поле партицирования",
+                    "begin_connection_time": "Время, когда увидели первый пакет flow",
+                    "end_connection_time": "Время, когда увидели последний пакет flow",
+                    "client_ip_address4": "IP адрес, выданный роутеру абонента (серый или белый). Null, если ip_version=6",
+                    "client_ip_address6": "IP адрес, выданный роутеру абонента (серый или белый). Null, если ip_version=4",
+                    "client_ip_port": "Абонентский серый Tcp/udp порт flow",
+                    "server_ip_address4": "IPv4 адрес назаначения",
+                    "server_ip_address6": "IPv6 адрес назаначения",
+                    "server_ip_port": "Порт назначения",
+                    "protocol_code": "IP протокол согласно RFC, для TCP=6, для UDP=17",
+                    "point_id": "",
+                    "flow_in_bytes_count": "Суммарное количество байт в пакетах к абоненту, пролетевших во flow",
+                    "flow_out_bytes_count": "Суммарное количество байт в пакетах от абонента, пролетевших во flow",
+                    "flow_protocol": "",
+                    "flow_abonent_id": "Логин абонента (считается на DPI по связке с радиус-аккаунтингом), считается в момент, когда создается flow",
+                    "flow_sni": "Домен https запроса",
+                    "flow_data_content_id": "",
+                    "for_day": "День, за который пришел запрос. Расчитывается на основе ts_start. Поле партицирования"
+                },
+                "sample_hide": true
+            }
+        }
+    }
+}

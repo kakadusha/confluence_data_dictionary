@@ -2356,6 +2356,19 @@
           "traf_bonus": "",
           "sa_import_date": "Дата заливки на sa"
         }
+      },
+      "payments_source_dict_all": {
+        "comment": "Справочник Источников платежей",
+        "fields": {
+          "payments_source_dict_id": "",
+          "payments_source_dict_name": "",
+          "cashier": "",
+          "active_from": "",
+          "active_to": "",
+          "billing_id": "",
+          "sa_import_date": "",
+          "parent_source_id": ""
+        }
       }
     }
   }

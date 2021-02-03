@@ -3,151 +3,105 @@
     "description":"",
     "tables": {    
       "client_entity": {
-        "comment": "демография клиента ",
+        "comment": "Демография клиента",
         "fields": {
-          "client_id": "ид клиента",
-          "sirname": "фамилия",
-          "firstname": "имя",
-          "middlename": "отчество",
-          "birthdate": "дата рождения",
-          "gender": "м/ж",
-          "ethnics": "национальность",
-          "passport": "паспорт",
-          "billing_id": "ID биллинга"
+          "client_id": "Идентификатор клиента в биллинге",
+          "billing_id": "Идентификатор биллинга",
+          "name": "Имя клиента по договору",
+          "age": "Возраст клиента по договору",
+          "gender": "Пол клиента по имени в договоре",
+          "operator": "Оператор мобильного телефона клиента (активного)"          
         },
-        "sample_hide": true
-      },
-      "cadastr": {
-        "comment": "информация о площади и стоимости кадастровых объектов",
-        "fields": {
-          "type": "тип кадастрового объекта",
-          "cadastr_id": "кадастровый номер",
-          "address": "адрес объекта",
-          "square": "площадь объекта",
-          "price": "кадастровая стоимость объекта"
-        },
-        "sample_hide": true
-      },
-      "client_address": {
-        "comment": "информация об адресе клиента",
-        "fields": {
-          "cl_id_bi": "ID клиента в BI",
-          "client_id": "ID клиента в биллинге",
-          "cl_city": "город клиента",
-          "cl_street": "улица",
-          "cl_house": "номер дома",
-          "cl_flat": "квартира",
-          "square_flat": "площадь кавртиры",
-          "billing_id": "ID биллинга"
-        },
-        "sample_hide": true
+        "sample_hide": false
       },
       "client_devices": {
-        "comment": "информация об устройствах клиента",
+        "comment": "Устройства клиента за роутерами дом.ру",
         "fields": {
           "billing_id": "ID биллинга",
           "client_id": "ID клиента в биллинге",
-          "agreement_number": "номер договора",
-          "login_name": "логин клиента",
-          "interface_type":"тип подключения устройства к сети",
-          "device_type": "тип устройства",
+          "agreement_number": "Номер договора",
+          "login_name": "Логин клиента",
+          "interface_type":"Тип подключения устройства к сети",
+          "device_type": "Тип устройства, определенный по host_name",
           "mac_address": "MAC-адрес устройства",
-          "host_name": "имя устройства в сети",
-          "presence_days_count": "",
-          "poll_count": "",
-          "created_at": "дата создания записи",
-          "period": ""
+          "host_name": "Имя устройства в сети",
+          "presence_days_count": "Количество дней за период, когда устройство обнаруживалось в сети",
+          "poll_count": "Количество опросов роутера за период, когда устройство обнаруживалось в сети. В среднем опросы происходят раз в 40 минут. Если устройство появлялось в сети между опросами, оно не обнаружится",
+          "created_at": "Время создания записи",
+          "period": "Период агрегации, обычно 45 дней. При ручных сборках таблицы могут добавляться произвольные периоды"
         },
-        "sample_hide": true
-      },
-      "client_entity_cadastr": {
-        "comment": "информация о площади и кадастроовй стоимости жилья клиента",
-        "fields": {
-          "client_id": "ID клиента в биллинге",
-          "billing_id": "ID биллинга",
-          "cadastr_id": "кадастровый номер",
-          "square": "площадь",
-          "price": "кадастровая стоимость"
-        },
-        "sample_hide": true
-      },
-      "client_entity_cadastr_square": {
-        "comment": "информация о площади жилья клиента",
-        "fields": {
-          "client_id": "ID клиента в биллинге",
-          "billing_id": "ID биллинга",
-          "cadastr_id": "кадастровый номер",
-          "square": "площадь"
-        },
-        "sample_hide": true
-      },
-      "client_gender_ethnics": {
-        "comment": "пол и этническая принадлежность клиента",
-        "fields": {
-          "client_id": "ID клиента в биллинге",
-          "billing_id": "ID биллинга",
-          "sirname": "фамилия",
-          "firstname": "имя",
-          "middlename": "отчество",
-          "birthdate": "дата рождения",
-          "passport": "",
-          "gender": "пол",
-          "ethnics": "национальность"
-        },
-        "sample_hide": true
+        "sample_hide": false
       },
       "client_phone_operator": {
-        "comment": "информация о телефонах и операторах клиентов",
+        "comment": "Информация по мобильному номеру клиента",
         "fields": {
-          "client_phone_id": "",
-          "client_id": "ID клиента в биллинге",
-          "billing_id": "ID биллинга",
-          "phone_number": "номер телефона клиента",
-          "operator": "оператор сотовой связи, обслуживающий номер"
+          "billing_id": "Идентификатор биллинга",
+          "client_id": "Идентификатор клиента в биллинге",
+          "client_phone_id": "Идентификатор номера телефона в биллинге",
+          "operator": "Оператор сотовой связи, обслуживающий номер",
+          "region": "Регион для номера телефона",
+          "client_moved_phone_number": "Производилась ли миграция номера между операторами"
         },
-        "sample_hide": true
-      },
-      "clients_all_normalized": {
-        "comment": "общая информация о клиентах",
-        "fields": {
-          "client_id": "ID клиента в биллинге",
-          "billing_id": "ID биллинга",
-          "sirname": "фамилия",
-          "firstname": "имя",
-          "middlename": "отчество",
-          "birthdate": "дата рождения клиента",
-          "passport": "паспорт"
-        },
-        "sample_hide": true
+        "sample_hide": false
       },
       "namesdict": {
-        "comment": "",
+        "comment": "Вспомогательная таблица для определения пола и национальности",
         "fields": {
-          "rectype": "",
-          "lett": "",
-          "name": "",
-          "ethnic": "",
-          "gender": ""
+          "rectype": "Тип поля индекса (0 - имя, 2 - фамилия)",
+          "lett": "Первая буква основного поля",
+          "name": "Основное поле (Имя, Фамилия, Отчество)",
+          "ethnic": "Национальность",
+          "gender": "Пол"
         },
-        "sample_hide": true
+        "sample_hide": false
       },
       "single_clients": {
-        "comment": "",
+        "comment": "Клиенты-'одиночки' и их устройства за роутерами. Получены из client_devices фильтром на клиентов, у которых ровно одно мобильное устройство имеет presence_days_count >= period/3",
         "fields": {
           "billing_id": "ID биллинга",
           "client_id": "ID клиента в биллинге",
-          "agreement_number": "номер договора",
-          "login_name": "логин клиента",
-          "interface_type": "тип подключения устройства к сети",
-          "device_type": "тип устройства",
+          "agreement_number": "Номер договора",
+          "login_name": "Логин клиента",
+          "interface_type": "Тип подключения устройства к сети",
+          "device_type": "Тип устройства, определенный по host_name",
           "mac_address": "MAC-адрес устройства",
-          "host_name": "имя устройства в сети",
-          "presence_days_count": "",
-          "poll_count": "",
-          "created_at": "дата создания записи",
-          "period": ""
+          "host_name": "Имя устройства в сети",
+          "presence_days_count": "Количество дней за период, когда устройство обнаруживалось в сети",
+          "poll_count": "Количество опросов роутера за период, когда устройство обнаруживалось в сети",
+          "created_at": "Время создания записи",
+          "period": "Период агрегации, обычно 45 дней"
         },
-        "sample_hide": true
+        "sample_hide": false
+      },
+      "client_watching_cinema": {
+        "comment": "Информация по просмотрам контента в различных онлайн-кинотеатрах + наличие подписки",
+        "fields": {
+          "login": "Логин абонента",
+          "agreement_id": "id договора",
+          "billing_id": "Биллинг id",
+          "client_type_id": "1- юр лицо, 2 - физ лицо",
+          "cinema": "Название онлайн-кинотеатра",
+          "is_pay": "Наличие просмотра платного контента за день (1 - да, 0 - нет)",
+          "is_free": "Наличие просмотра бесплатно контента за день (1 - да, 0 - нет)",
+          "is_subscription": "Наличие подписки (1 - да, 0 - нет)",
+          "for_day": "Дата расчета"
+        },
+        "sample_hide": false
+      },
+      "client_child": {
+        "comment": "Информация по наличию детей",
+        "fields": {
+          "login": "Логин абонента",
+          "agreement_id": "id договора",
+          "billing_id": "Биллинг id",
+          "has_child": "Флаг наличия детей",
+          "has_preschool": "Флаг наличия детей дошкольного возраста",
+          "has_school": "Флаг наличия детей школьного возраста",
+          "has_young_school": "Флаг наличия детей из младшей школы",
+          "has_high_school": "Флаг наличия детей из старшей школы",
+          "calc_period": "Период сбора информации"
+        },
+        "sample_hide": false
       }
     }
   }

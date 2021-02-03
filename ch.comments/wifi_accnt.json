@@ -172,7 +172,7 @@
           "count_uniq_users": "количество уникальных пользователей"
         }
       },
-      "sess_hours_month_shard": {
+      "sess_month_wifi_shard": {
         "comment": "replicated aggregating таблица с количествами пользователей в разрезе месяца",
         "fields": {
           "city_id": "идентификатор города",
@@ -353,6 +353,50 @@
           "filter": "",
           "profile": "Alc-SLA-Prof-Str or Huawei-Policy-Name",
           "timeout": "таймаут в секундах"
+        }
+      },
+      "rinet_wifi": {
+        "comment": "distributed таблица с данными Hotspot Ринет, смотрит в rinet_wifi_shard",
+        "fields": {
+          "ts": "дата и время события",
+          "event_type": "идентификатор типа события",
+          "session_id": "идентификатор сессии",
+          "allocated_ip": "выделенный IP-адрес",
+          "username": "логин пользователя",
+          "connection_type": "тип соединения",
+          "in_number": "",
+          "out_number": "",
+          "nas_ip": "IP-адрес сервера NAS",
+          "nas_port": "порт сервера NAS",
+          "in_bytes": "общий объём входящего траффика",
+          "out_bytes": "общий объём исходящего траффика",
+          "password": "",
+          "calling_id": "MAC-адрес устройства",
+          "apn": "APN",
+          "location_id": "",
+          "duration": "длительность сессии"
+        }
+      },
+      "rinet_wifi_shard": {
+        "comment": "replicated таблица с данными Hotspot Ринет",
+        "fields": {
+          "ts": "дата и время события",
+          "event_type": "идентификатор типа события",
+          "session_id": "идентификатор сессии",
+          "allocated_ip": "выделенный IP-адрес",
+          "username": "логин пользователя",
+          "connection_type": "тип соединения",
+          "in_number": "",
+          "out_number": "",
+          "nas_ip": "IP-адрес сервера NAS",
+          "nas_port": "порт сервера NAS",
+          "in_bytes": "общий объём входящего траффика",
+          "out_bytes": "общий объём исходящего траффика",
+          "password": "",
+          "calling_id": "MAC-адрес устройства",
+          "apn": "APN",
+          "location_id": "",
+          "duration": "длительность сессии"
         }
       }
     }
